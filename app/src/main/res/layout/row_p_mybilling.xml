@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/mSrNo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/s_no"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/mAppointmentDoctor"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_1"
+        android:layout_weight=".2"
+
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/doctor"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/mAppointmentDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_1"
+        android:layout_weight=".2"
+
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/appointment_date"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/mAppointmentTime"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_1"
+        android:layout_weight=".2"
+
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/appointment_date"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/mAppointmentMode"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/appointment_mode"
+        android:textSize="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/mPrntRecipt"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp_1"
+        android:layout_weight=".2"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/print_receipt"
+        android:textSize="@dimen/dp_10"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

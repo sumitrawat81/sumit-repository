@@ -1,0 +1,495 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".fragemnts.patient.PAccountDetails">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/details_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mUpdateBtn"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_16"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name_of_card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/name_on_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/card_no"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_weight="1.40"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <EditText
+                        android:id="@+id/card_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_field_height"
+                        android:background="@drawable/registre_input_field_2"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+
+                        android:digits="@string/digits"
+                        android:maxLength="18"
+                        android:nextFocusDown="@+id/cvv_no"
+                        android:padding="@dimen/dp_10"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_default"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".60"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cvv"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <EditText
+                        android:id="@+id/cvv_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_field_height"
+                        android:background="@drawable/registre_input_field_2"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:digits="@string/digits"
+                        android:maxLength="5"
+                        android:nextFocusDown="@+id/billing_address1"
+                        android:padding="@dimen/dp_10"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_default" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expiration_month"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/registre_input_field"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/mMonthChooser"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/registre_input_field"
+                            android:gravity="center_vertical"
+                            app:ms_arrowColor="@color/text_color_black"
+                            app:ms_baseColor="@android:integer/config_shortAnimTime"
+                            app:ms_enableErrorLabel="false"
+                            app:ms_enableFloatingLabel="false"
+                            app:ms_highlightColor="@integer/color_code"
+                            app:ms_hintColor="@color/gray" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/expiration_year"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/registre_input_field"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/mYearChooser"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/registre_input_field"
+                            android:gravity="center_vertical"
+                            app:ms_arrowColor="@color/text_color_black"
+                            app:ms_baseColor="@android:integer/config_shortAnimTime"
+                            app:ms_enableErrorLabel="false"
+                            app:ms_enableFloatingLabel="false"
+                            app:ms_highlightColor="@integer/color_code"
+                            app:ms_hintColor="@color/gray" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/addressCompairater_chkr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/is_your_billing" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/billing_address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/billing_address1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/billing_address2"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/billing_address_2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/billing_address2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/mCity"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/select_country_m"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_default" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/registre_input_field"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/mCountryChooser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/registre_input_field"
+                    android:gravity="center_vertical"
+                    app:ms_arrowColor="@color/text_color_black"
+                    app:ms_baseColor="@android:integer/config_shortAnimTime"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_highlightColor="@integer/color_code"
+                    app:ms_hintColor="@color/gray" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/select_state_m"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_default" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/registre_input_field"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/mStateChooser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/registre_input_field"
+                    android:gravity="center_vertical"
+                    app:ms_arrowColor="@color/text_color_black"
+                    app:ms_baseColor="@android:integer/config_shortAnimTime"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_highlightColor="@integer/color_code"
+                    app:ms_hintColor="@color/gray" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/city_m"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mCity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:nextFocusDown="@+id/mZipCode"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/zip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:digits="@string/digits"
+                android:nextFocusDown="@+id/insuranceCompnyName"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/do_you_have_insurance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_default" />
+
+            <RadioGroup
+                android:id="@+id/radioIsInsurence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/radioYEs"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:checked="true"
+                    android:text="@string/yes" />
+
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+
+                    android:text="@string/no" />
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/txtInsuranceNameLL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insurance_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <EditText
+                        android:id="@+id/insuranceCompnyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_field_height"
+                        android:background="@drawable/registre_input_field_2"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@+id/insuranceNo"
+                        android:padding="@dimen/dp_10"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_default" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/txtInsuranceNumberLL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/insurance_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <EditText
+                        android:id="@+id/insuranceNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/input_field_height"
+                        android:background="@drawable/registre_input_field_2"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/card_no"
+                        android:padding="@dimen/dp_10"
+                        android:singleLine="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_default" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mUpdateBtn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/colorAccent"
+        android:text="@string/save_details"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+</RelativeLayout>

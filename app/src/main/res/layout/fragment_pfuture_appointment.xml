@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sibsefid.fragemnts.patient.myappointment.PFutureAppointment">
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/list"
+        android:name="com.sibsefid.fragemnts.patient.myappointment.PPastAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="@dimen/dp_10"
+
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.sibsefid.fragemnts.patient.myappointment.PPastAppointment"
+        tools:listitem="@layout/item_mymessage_appointment" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+
+
+

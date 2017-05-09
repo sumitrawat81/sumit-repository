@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clickBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/patient_see_doctor_height"
+        android:orientation="vertical">
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/mImageView"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/profile_img_infonew" />
+
+        <TextView
+            android:id="@+id/mDoctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="@string/my_details"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_m" />
+
+        <TextView
+            android:id="@+id/mDoctorTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+
+            android:maxLines="2"
+            android:text="@string/my_time"
+            android:textColor="@color/q_green"
+            android:visibility="gone"
+            android:textSize="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/mName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxLines="3"
+
+            android:gravity="center"
+            android:ellipsize="end"
+            android:text="@string/my_details"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/text_size_default" />
+
+        <Button
+            android:id="@+id/mVisitNowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@drawable/login_patient_btn"
+            android:text="@string/visit_now"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/mScheduleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_4"
+            android:background="@drawable/login_patient_btn"
+            android:text="@string/schedule"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color" />
+
+    </LinearLayout>
+</LinearLayout>

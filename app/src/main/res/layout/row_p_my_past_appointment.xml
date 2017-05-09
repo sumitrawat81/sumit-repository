@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:clickable="true"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/language"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/mDName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_m"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mChatType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:text=""
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appointment_on" />
+
+            <TextView
+                android:id="@+id/mDAppointmentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20/04/2016 6Am"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/location"
+                android:drawablePadding="10dp"
+                android:text="@string/status"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_default"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mDStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="not_responed_by_doctor"
+                android:textSize="@dimen/text_size_default"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/button_CommnunicationNote"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_36"
+                android:layout_weight="1"
+                android:background="@drawable/button_appointment_bg"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/dp_10"
+                android:text="@string/communication_note"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/sp_8"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/button_PhysicanOrder"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_36"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/button_appointment_bg"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/dp_5"
+                android:text="@string/physicion_order"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/sp_8"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/button_ClinicalDashboard"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_36"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_weight="1"
+                android:background="@drawable/button_appointment_bg"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/dp_5"
+                android:text="@string/clinical_dashboard"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/sp_8"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#888"></View>
+
+</LinearLayout>

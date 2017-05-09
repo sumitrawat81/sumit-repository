@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/from_date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_default"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mDFromDateSelector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1.50"
+            android:background="@drawable/edittext_round_border_bg"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_color_black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/to_date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_default"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mDToDateSelector"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1.50"
+            android:background="@drawable/edittext_round_border_bg"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_color_black" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="@string/status"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_default"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.50"
+
+            android:background="@drawable/edittext_round_border_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/mDStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_round_border_bg"
+                android:gravity="center_vertical"
+                app:ms_arrowColor="@color/text_color_black"
+                app:ms_baseColor="@android:integer/config_shortAnimTime"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="false"
+                app:ms_highlightColor="@integer/color_code"
+                app:ms_hint="@string/status_"
+                app:ms_hintColor="@color/gray" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_default"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/mDFilterBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/input_field_height"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1.50"
+            android:background="@drawable/login_provider_btn"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_size_default" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

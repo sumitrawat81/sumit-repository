@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/dark_white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_toStartOf="@+id/layout_add_remove"
+            android:padding="10dp"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/mFMHIHowMany"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/registre_input_field_2"
+                android:hint="@string/enter_how_name_of_condition"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mFMHIEnterYear"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/registre_input_field_2"
+                android:hint="@string/enter_who_in_family"
+                android:inputType="text"
+
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_add_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/dark_white"
+            android:gravity="center_horizontal"
+
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/mFMHIDeleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="10dp"
+                android:src="@mipmap/cross"
+                android:tag="false"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/mFMHIEditBtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="10dp"
+                android:src="@mipmap/text_edit"
+                android:tag="false"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/mFMHIProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

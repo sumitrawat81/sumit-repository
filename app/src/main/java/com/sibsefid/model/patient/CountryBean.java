@@ -1,0 +1,72 @@
+package com.sibsefid.model.patient;
+
+import android.text.TextUtils;
+
+import java.util.ArrayList;
+
+/**
+ * Created by root on 12/9/16.
+ */
+public class CountryBean {
+
+    /**
+     * success : true
+     * Data : [{"detail_code":"1","detail_code_nm":"Afghanistan"},{"detail_code":"2","detail_code_nm":"Albania"},{"detail_code":"3","detail_code_nm":"Algeria"},{"detail_code":"4","detail_code_nm":"Andorra"},{"detail_code":"5","detail_code_nm":"Angola"},{"detail_code":"6","detail_code_nm":"Antigua and Barbuda"},{"detail_code":"7","detail_code_nm":"Argentina"},{"detail_code":"8","detail_code_nm":"Armenia"},{"detail_code":"9","detail_code_nm":"Australia"},{"detail_code":"10","detail_code_nm":"Austria"},{"detail_code":"11","detail_code_nm":"Azerbaijan"},{"detail_code":"12","detail_code_nm":"Bahamas, The"},{"detail_code":"13","detail_code_nm":"Bahrain"},{"detail_code":"14","detail_code_nm":"Bangladesh"},{"detail_code":"15","detail_code_nm":"Barbados"},{"detail_code":"16","detail_code_nm":"Belarus"},{"detail_code":"17","detail_code_nm":"Belgium"},{"detail_code":"18","detail_code_nm":"Belize"},{"detail_code":"19","detail_code_nm":"Benin"},{"detail_code":"20","detail_code_nm":"Bhutan"},{"detail_code":"21","detail_code_nm":"Bolivia"},{"detail_code":"22","detail_code_nm":"Bosnia and Herzegovina"},{"detail_code":"23","detail_code_nm":"Botswana"},{"detail_code":"24","detail_code_nm":"Brazil"},{"detail_code":"25","detail_code_nm":"Brunei"},{"detail_code":"26","detail_code_nm":"Bulgaria"},{"detail_code":"27","detail_code_nm":"Burkina Faso"},{"detail_code":"28","detail_code_nm":"Burma"},{"detail_code":"29","detail_code_nm":"Burundi"},{"detail_code":"30","detail_code_nm":"Cambodia"},{"detail_code":"31","detail_code_nm":"Cameroon"},{"detail_code":"32","detail_code_nm":"Canada"},{"detail_code":"33","detail_code_nm":"Cape Verde"},{"detail_code":"34","detail_code_nm":"Central Africa"},{"detail_code":"35","detail_code_nm":"Chad"},{"detail_code":"36","detail_code_nm":"Chile"},{"detail_code":"37","detail_code_nm":"China"},{"detail_code":"38","detail_code_nm":"Colombia"},{"detail_code":"39","detail_code_nm":"Comoros"},{"detail_code":"40","detail_code_nm":"Congo, Democratic Republic of the"},{"detail_code":"41","detail_code_nm":"Costa Rica"},{"detail_code":"42","detail_code_nm":"Cote dIvoire"},{"detail_code":"43","detail_code_nm":"Crete"},{"detail_code":"44","detail_code_nm":"Croatia"},{"detail_code":"45","detail_code_nm":"Cuba"},{"detail_code":"46","detail_code_nm":"Cyprus"},{"detail_code":"47","detail_code_nm":"Czech Republic"},{"detail_code":"48","detail_code_nm":"Denmark"},{"detail_code":"49","detail_code_nm":"Djibouti"},{"detail_code":"50","detail_code_nm":"Dominican Republic"},{"detail_code":"51","detail_code_nm":"East Timor"},{"detail_code":"52","detail_code_nm":"Ecuador"},{"detail_code":"53","detail_code_nm":"Egypt"},{"detail_code":"54","detail_code_nm":"El Salvador"},{"detail_code":"55","detail_code_nm":"Equatorial Guinea"},{"detail_code":"56","detail_code_nm":"Eritrea"},{"detail_code":"57","detail_code_nm":"Estonia"},{"detail_code":"58","detail_code_nm":"Ethiopia"},{"detail_code":"59","detail_code_nm":"Fiji"},{"detail_code":"60","detail_code_nm":"Finland"},{"detail_code":"61","detail_code_nm":"France"},{"detail_code":"62","detail_code_nm":"Gabon"},{"detail_code":"63","detail_code_nm":"Gambia, The"},{"detail_code":"64","detail_code_nm":"Georgia"},{"detail_code":"65","detail_code_nm":"Germany"},{"detail_code":"66","detail_code_nm":"Ghana"},{"detail_code":"67","detail_code_nm":"Greece"},{"detail_code":"68","detail_code_nm":"Grenada"},{"detail_code":"69","detail_code_nm":"Guadeloupe"},{"detail_code":"70","detail_code_nm":"Guatemala"},{"detail_code":"71","detail_code_nm":"Guinea"},{"detail_code":"72","detail_code_nm":"Guinea-Bissau"},{"detail_code":"73","detail_code_nm":"Guyana"},{"detail_code":"74","detail_code_nm":"Haiti"},{"detail_code":"75","detail_code_nm":"Holy See"},{"detail_code":"76","detail_code_nm":"Honduras"},{"detail_code":"77","detail_code_nm":"Hong Kong"},{"detail_code":"78","detail_code_nm":"Hungary"},{"detail_code":"79","detail_code_nm":"Iceland"},{"detail_code":"80","detail_code_nm":"India"},{"detail_code":"81","detail_code_nm":"Indonesia"},{"detail_code":"82","detail_code_nm":"Iran"},{"detail_code":"83","detail_code_nm":"Iraq"},{"detail_code":"84","detail_code_nm":"Ireland"},{"detail_code":"85","detail_code_nm":"Israel"},{"detail_code":"86","detail_code_nm":"Italy"},{"detail_code":"87","detail_code_nm":"Ivory Coast"},{"detail_code":"88","detail_code_nm":"Jamaica"},{"detail_code":"89","detail_code_nm":"Japan"},{"detail_code":"90","detail_code_nm":"Jordan"},{"detail_code":"91","detail_code_nm":"Kazakhstan"},{"detail_code":"92","detail_code_nm":"Kenya"},{"detail_code":"93","detail_code_nm":"Kiribati"},{"detail_code":"94","detail_code_nm":"Korea, North"},{"detail_code":"95","detail_code_nm":"Korea, South"},{"detail_code":"96","detail_code_nm":"Kosovo"},{"detail_code":"97","detail_code_nm":"Kuwait"},{"detail_code":"98","detail_code_nm":"Kyrgyzstan"},{"detail_code":"99","detail_code_nm":"Laos"},{"detail_code":"100","detail_code_nm":"Latvia"},{"detail_code":"101","detail_code_nm":"Lebanon"},{"detail_code":"102","detail_code_nm":"Lesotho"},{"detail_code":"103","detail_code_nm":"Liberia"},{"detail_code":"104","detail_code_nm":"Libya"},{"detail_code":"105","detail_code_nm":"Liechtenstein"},{"detail_code":"106","detail_code_nm":"Lithuania"},{"detail_code":"107","detail_code_nm":"Macau"},{"detail_code":"108","detail_code_nm":"Macedonia"},{"detail_code":"109","detail_code_nm":"Madagascar"},{"detail_code":"110","detail_code_nm":"Malawi"},{"detail_code":"111","detail_code_nm":"Malaysia"},{"detail_code":"112","detail_code_nm":"Maldives"},{"detail_code":"113","detail_code_nm":"Mali"},{"detail_code":"114","detail_code_nm":"Malta"},{"detail_code":"115","detail_code_nm":"Marshall Islands"},{"detail_code":"116","detail_code_nm":"Mauritania"},{"detail_code":"117","detail_code_nm":"Mauritius"},{"detail_code":"118","detail_code_nm":"Mexico"},{"detail_code":"119","detail_code_nm":"Micronesia"},{"detail_code":"120","detail_code_nm":"Moldova"},{"detail_code":"121","detail_code_nm":"Monaco"},{"detail_code":"122","detail_code_nm":"Mongolia"},{"detail_code":"123","detail_code_nm":"Montenegro"},{"detail_code":"124","detail_code_nm":"Morocco"},{"detail_code":"125","detail_code_nm":"Namibia"},{"detail_code":"126","detail_code_nm":"Nauru"},{"detail_code":"127","detail_code_nm":"Nepal"},{"detail_code":"128","detail_code_nm":"Netherlands"},{"detail_code":"129","detail_code_nm":"New Zealand"},{"detail_code":"130","detail_code_nm":"Nicaragua"},{"detail_code":"131","detail_code_nm":"Niger"},{"detail_code":"132","detail_code_nm":"Nigeria"},{"detail_code":"133","detail_code_nm":"North Korea"},{"detail_code":"134","detail_code_nm":"Norway"},{"detail_code":"135","detail_code_nm":"Oman"},{"detail_code":"136","detail_code_nm":"Pakistan"},{"detail_code":"137","detail_code_nm":"Palau"},{"detail_code":"138","detail_code_nm":"Panama"},{"detail_code":"139","detail_code_nm":"Papua New Guinea"},{"detail_code":"140","detail_code_nm":"Paraguay"},{"detail_code":"141","detail_code_nm":"Peru"},{"detail_code":"142","detail_code_nm":"Philippines"},{"detail_code":"143","detail_code_nm":"Poland"},{"detail_code":"144","detail_code_nm":"Portugal"},{"detail_code":"145","detail_code_nm":"Qatar"},{"detail_code":"146","detail_code_nm":"Romania"},{"detail_code":"147","detail_code_nm":"Russia"},{"detail_code":"148","detail_code_nm":"Rwanda"},{"detail_code":"149","detail_code_nm":"Saint Lucia"},{"detail_code":"150","detail_code_nm":"Saint Vincent and the Grenadines"},{"detail_code":"151","detail_code_nm":"Samoa"},{"detail_code":"152","detail_code_nm":"San Marino"},{"detail_code":"153","detail_code_nm":"Sao Tome and Principe"},{"detail_code":"154","detail_code_nm":"Saudi Arabia"},{"detail_code":"155","detail_code_nm":"Scotland"},{"detail_code":"156","detail_code_nm":"Senegal"},{"detail_code":"157","detail_code_nm":"Serbia"},{"detail_code":"158","detail_code_nm":"Seychelles"},{"detail_code":"159","detail_code_nm":"Sierra Leone"},{"detail_code":"160","detail_code_nm":"Singapore"},{"detail_code":"161","detail_code_nm":"Slovakia"},{"detail_code":"162","detail_code_nm":"Slovenia"},{"detail_code":"163","detail_code_nm":"Solomon Islands"},{"detail_code":"164","detail_code_nm":"Somalia"},{"detail_code":"165","detail_code_nm":"South Africa"},{"detail_code":"166","detail_code_nm":"South Korea"},{"detail_code":"167","detail_code_nm":"Spain"},{"detail_code":"168","detail_code_nm":"Sri Lanka"},{"detail_code":"169","detail_code_nm":"Sudan"},{"detail_code":"170","detail_code_nm":"Suriname"},{"detail_code":"171","detail_code_nm":"Swaziland"},{"detail_code":"172","detail_code_nm":"Sweden"},{"detail_code":"173","detail_code_nm":"Switzerland"},{"detail_code":"174","detail_code_nm":"Syria"},{"detail_code":"175","detail_code_nm":"Taiwan"},{"detail_code":"176","detail_code_nm":"Tajikistan"},{"detail_code":"177","detail_code_nm":"Tanzania"},{"detail_code":"178","detail_code_nm":"Thailand"},{"detail_code":"179","detail_code_nm":"Tibet"},{"detail_code":"180","detail_code_nm":"Timor-Leste"},{"detail_code":"181","detail_code_nm":"Togo"},{"detail_code":"182","detail_code_nm":"Tonga"},{"detail_code":"183","detail_code_nm":"Trinidad and Tobago"},{"detail_code":"184","detail_code_nm":"Tunisia"},{"detail_code":"185","detail_code_nm":"Turkey"},{"detail_code":"186","detail_code_nm":"Turkmenistan"},{"detail_code":"187","detail_code_nm":"Tuvalu"},{"detail_code":"188","detail_code_nm":"Uganda"},{"detail_code":"189","detail_code_nm":"Ukraine"},{"detail_code":"190","detail_code_nm":"United Arab Emirates"},{"detail_code":"191","detail_code_nm":"United Kingdom"},{"detail_code":"192","detail_code_nm":"United States"},{"detail_code":"193","detail_code_nm":"Uruguay"},{"detail_code":"194","detail_code_nm":"Uzbekistan"},{"detail_code":"195","detail_code_nm":"Vanuatu"},{"detail_code":"196","detail_code_nm":"Venezuela"},{"detail_code":"197","detail_code_nm":"Vietnam"},{"detail_code":"198","detail_code_nm":"Yemen"},{"detail_code":"199","detail_code_nm":"Zambia"},{"detail_code":"200","detail_code_nm":"Zimbabwe"}]
+     */
+
+    private boolean success;
+    /**
+     * detail_code : 1
+     * detail_code_nm : Afghanistan
+     */
+
+    private ArrayList<DataBean> Data;
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public ArrayList<DataBean> getData() {
+        return Data;
+    }
+
+    public void setData(ArrayList<DataBean> Data) {
+        this.Data = Data;
+    }
+
+    public static class DataBean {
+        private String detail_code;
+        private String detail_code_nm;
+        private int detail_codeint = 0;
+
+        public int getDetail_codeint() {
+
+            if (TextUtils.isEmpty(detail_code)) {
+                detail_code = "0";
+            }
+            detail_codeint = Integer.parseInt(detail_code);
+            return detail_codeint;
+        }
+
+
+        public String getDetail_code() {
+            return detail_code;
+        }
+
+        public void setDetail_code(String detail_code) {
+            this.detail_code = detail_code;
+        }
+
+        public String getDetail_code_nm() {
+            return detail_code_nm;
+        }
+
+        public void setDetail_code_nm(String detail_code_nm) {
+            this.detail_code_nm = detail_code_nm;
+        }
+    }
+}

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_4"
+    android:paddingTop="@dimen/dp_4">
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/details_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_myprofile_top"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MyProfile_TextView"
+                    android:text="@string/medicine_name" />
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/registre_input_field"
+                    android:gravity="right|center_vertical"
+
+                    android:orientation="horizontal">
+
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/mMedicineChooser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/registre_input_field"
+                        android:gravity="center_vertical|right"
+                        app:ms_arrowColor="@color/text_color_black"
+                        app:ms_baseColor="@android:integer/config_shortAnimTime"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_highlightColor="@integer/color_code"
+                        app:ms_hint="@string/select_medicine"
+                        app:ms_hintColor="@color/gray"
+                        app:ms_thickness="12sp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_date"
+                        android:textColor="@color/profile_text"
+
+                        android:textSize="@dimen/text_size_default" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/registre_input_field"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/mStartDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:hint="start date" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/end_date"
+                        android:textColor="@color/profile_text"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/registre_input_field"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/mEndDate"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:hint="end date" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/MyProfile_linear">
+
+                <TextView
+                    style="@style/MyProfile_TextView"
+                    android:text="@string/drug_dose" />
+
+                <EditText
+                    android:id="@+id/mDrugDose"
+                    style="@style/MyProfile_EditText"
+                    android:hint="eg. 200mg"
+                    android:textSize="@dimen/text_size_default"></EditText>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/MyProfile_linear">
+
+                <TextView
+                    style="@style/MyProfile_TextView"
+                    android:text="@string/time_taken" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.50"
+                    android:weightSum="3">
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/registre_input_field"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/mHourChooser"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/registre_input_field"
+                            android:gravity="center_vertical"
+                            app:ms_arrowColor="@color/text_color_black"
+                            app:ms_baseColor="@android:integer/config_shortAnimTime"
+                            app:ms_enableErrorLabel="false"
+                            app:ms_enableFloatingLabel="false"
+                            app:ms_highlightColor="@android:integer/config_longAnimTime"
+                            app:ms_hint="@string/hours"
+                            app:ms_hintColor="@color/gray" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/registre_input_field"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/mMinuteChooser"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/registre_input_field"
+                            android:gravity="center_vertical"
+                            app:ms_arrowColor="@color/text_color_black"
+                            app:ms_baseColor="@android:integer/config_shortAnimTime"
+                            app:ms_enableErrorLabel="false"
+                            app:ms_enableFloatingLabel="false"
+                            app:ms_highlightColor="@android:integer/config_longAnimTime"
+                            app:ms_hint="@string/minutes"
+                            app:ms_hintColor="@color/gray" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/registre_input_field"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <fr.ganfra.materialspinner.MaterialSpinner
+                            android:id="@+id/mTimeChooser"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/registre_input_field"
+                            android:gravity="center_vertical"
+                            app:ms_arrowColor="@color/text_color_black"
+                            app:ms_baseColor="@android:integer/config_shortAnimTime"
+                            app:ms_enableErrorLabel="false"
+                            app:ms_enableFloatingLabel="false"
+                            app:ms_highlightColor="@android:integer/config_longAnimTime"
+
+                            app:ms_hintColor="@color/gray" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/MyProfile_linear">
+
+                <TextView
+                    style="@style/MyProfile_TextView"
+                    android:text="@string/select_week" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:background="@drawable/registre_input_field"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp_2"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/sunCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sun" />
+
+                        <CheckBox
+                            android:id="@+id/monCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mon" />
+
+                        <CheckBox
+                            android:id="@+id/tueCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tue" />
+
+                        <CheckBox
+                            android:id="@+id/wedCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/wed" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp_2"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/thusCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/thus" />
+
+                        <CheckBox
+                            android:id="@+id/friCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fri" />
+
+                        <CheckBox
+                            android:id="@+id/satCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sat" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/MyProfile_linear">
+
+                <TextView
+                    style="@style/MyProfile_TextView"
+                    android:text="@string/use_of_note" />
+
+                <EditText
+                    android:id="@+id/mAbout"
+                    style="@style/MyProfile_EditText"
+                    android:layout_height="@dimen/dp_100"
+                    android:gravity="top|left"
+                    android:padding="10dp"
+                    android:textSize="@dimen/text_size_default"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/mSaveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight=".60"
+                    android:background="@drawable/login_provider_btn"
+                    android:gravity="center"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_size_m" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

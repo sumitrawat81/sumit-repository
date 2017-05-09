@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SibSefid</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">پست الکترونیک</string>
+    <string name="prompt_password">رمز عبور </string>
+    <string name="action_sign_in">ورود به سیستم </string>
+    <string name="action_sign_in_short">ورود به سیستم</string>
+    <string name="error_invalid_email">پست الکترونیکی وارد شده نامعتبر است</string>
+    <string name="error_invalid_password">رمز عبور کوتاه است</string>
+    <string name="error_invalid_password_please_old">رمز عبور قبلی خود را وارد کنید</string>
+    <string name="error_invalid_confirm_password">رمز عبور وارد شده کوتاه است</string>
+    <string name="error_invalid_both_pass">رمز عبور وارد شده و رمز عبور تاییدی باید یکسان باشد</string>
+    <string name="error_invalid_both_pass_old">رمز عبور قبلی اشتباه است</string>
+    <string name="error_invalid_first_name">نام وارد شده اشتباه است</string>
+    <string name="error_invalid_last_name"> نام وارد شده اشتباه است </string>
+    <string name="error_invalid_country">نام کشور اشتباه است</string>
+    <string name="error_invalid_speciality">تخصص وارد شده اشتباه است</string>
+    <string name="error_invalid_pracitice">سال وارد شده صحیح نیست</string>
+    <string name="error_invalid_phone_number"> شماره تلفن صحیح نیست</string>
+    <string name="error_invalid_npi_number">شماره پروانه پزشکی نامعتبر است</string>
+    <string name="error_invalid_state_name">نام شهر اشتباه است</string>
+    <string name="error_invalid_licence_number">شماره مجوز نامعتبر است</string>
+    <string name="error_invalid_spoken_language">زبان انتخابی اشتباه است</string>
+    <string name="error_invalid_city">نام شهر اشتباه است</string>
+    <string name="error_invalid_address">نشانی وارد شده اشتباه است</string>
+    <string name="error_invalid_post_code">کد پستی صحیح نیست</string>
+    <string name="error_invalid_dob">تاریخ تولد نامعتبر است</string>
+    <string name="error_invalid_zip">Tصندوق پستی نامعتبر است</string>
+    <string name="error_invalid_qualification">تخصص باید وارد شود</string>
+    <string name="error_invalid_fee">مبلغ صحیح نیست</string>
+    <string name="error_invalid_message">بخش پیام ها باید تکمیل شود</string>
+    <string name="error_invalid_date">تاریخ را صحیح وارد کنید</string>
+    <string name="error_invalid_hours">زمان را دقیق وارد کنید</string>
+    <string name="error_invalid_minute">دقیقه را درست وارد کنید</string>
+    <string name="error_invalid_time">زمان را درست  انتخاب کنید</string>
+    <string name="error_invalid_chat_type">نوع چت باید اشتباه انتخاب شده است</string>
+    <string name="error_invalid_medicare_no">شماره پرونده پزشکی نامعتبر است</string>
+    <string name="error_invalid_first_name_not_text">نام فقط باید شامل حروف باشد</string>
+
+    <string name="error_field_required">پرکردن این قسمت الزامی است</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_as_patient">ورود بیمار</string>
+    <string name="login_as_provider">ورود پزشکان</string>
+    <string name="click_here">اینجا کلیک کنید</string>
+    <string name="click_here_if_you">در صورت تمایل به عضویت گروهی در سیب سفید </string>
+    <string name="remember_me">مرا بخاطر بسپار</string>
+    <string name="forgot_pass">رمز عبورتان را فراموش کرده اید؟</string>
+    <string name="you_dont_have">عضو نیستید؟</string>
+    <string name="signup">ثبت نام</string>
+    <string name="forgot_pass_1">رمز عبورتان را فراموش کرده اید؟</string>
+    <string name="forgot_pass_2">لطفا پست الکترونیک ثبت شده را وارد نمایید تا برای بازیابی رمز عبور ایمیل ارسال شود.</string>
+    <string name="reset_password">بازیابی رمزعبور</string>
+    <string name="title_activity_sign_up">ثبت نام</string>
+    <string name="first_name">نام</string>
+    <string name="file_name">نام ثبت شده</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="prompt_password_confirm">تایید رمز عبور</string>
+    <string name="address">نشانی</string>
+    <string name="address_1">نشانی ۲ </string>
+    <string name="city">شهر</string>
+    <string name="select_state">استان</string>
+    <string name="post_code">کد پستی</string>
+    <string name="dob">تاریخ تولد</string>
+    <string name="gender">جنسیت</string>
+    <string name="register">ثبت نام</string>
+    <string name="title_activity_patient">فعالیت بیمار</string>
+
+    <string name="action_settings">تنظیمات</string>
+    <string name="action">فعالیت</string>
+    <string name="dial_911">تماس با اورژانس</string>
+    <string name="for_medical_emerangcy">جهت اورژانس تماس بگیرید</string>
+    <string name="notification">پیام ها</string>
+
+    <string name="my_details">مشخصات من</string>
+    <string name="my_helth_history">سوابق پزشکی من</string>
+    <string name="my_message">پیام های من</string>
+
+    <string name="see_doctor">ویزیت دکتر</string>
+    <string name="my_appointment">برنامه های ویزیت من</string>
+    <string name="my_medicine_remindert">یادآوری دارو</string>
+
+    <string name="my_reminder_set">تنظیم یادآوری ها</string>
+    <string name="my_reminder_list">لیست یادآوری ها</string>
+    <string name="medicine_name">نام دارو</string>
+
+
+    <string name="my_billing">صورتحساب های من</string>
+    <string name="my_result">نتایج آزمایشات</string>
+    <string name="trackers">مراقبت های انجام شده</string>
+    <string name="symptom_checker">کنترل علائم بیماری</string>
+
+    <string-array name="namearray">
+        <item>@string/my_details</item>
+        <item>@string/my_helth_history</item>
+        <item>@string/my_message</item>
+        <item>@string/see_doctor</item>
+        <item>@string/my_appointment</item>
+        <item>@string/my_billing</item>
+        <item>@string/my_result</item>
+        <item>@string/trackers</item>
+        <item>@string/symptom_checker</item>
+        <item>@string/my_medicine_remindert</item>
+    </string-array>
+
+    <string name="account_details">حساب کاربری/مشخصات</string>
+    <string name="billing_information">صورتحساب/اطلاعات</string>
+    <string name="family_information">خانواده/اطلاعات</string>
+    <string name="title_m">عنوان:*</string>
+    <string name="select_language">انتخاب زبان*</string>
+    <string name="lastname_m">نام خانوادگی:</string>
+    <string name="email_m">پست الکترونیک:*</string>
+    <string name="dob_m">تاریخ تولد:*</string>
+    <string name="medicare_number_m">شماره پرونده پزشکی*</string>
+    <string name="gender_m">جنسیت:*</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="country_m">کشور:*</string>
+    <string name="state_m">State:*</string>
+    <string name="city_suburb_m">شهر/روستا:*</string>
+    <string name="address_m">نشانی ۱:*</string>
+    <string name="address_2_m">نشانی ۲:*</string>
+    <string name="mobile_m">تلفن همراه:*</string>
+    <string name="ememrgency_no_m">تلفن تماس ضروری:</string>
+    <string name="update_profile">بروزرسانی حساب کاربری</string>
+
+    <string name="summery">خلاصه</string>
+    <string name="blood_pressure">فشار خون</string>
+    <string name="blood_glucose">قند خون</string>
+    <string name="make_my_result">مرتب کردن نتایخ آزمایش</string>
+    <string name="visible_or">نمایش برای</string>
+    <string name="invisible_for_doctor_for">عدم نمایش برای</string>
+    <string name="my_next_appointment">پزشک ملاقات بعدی من</string>
+    <string name="if_you_issue"> در صورتی که وضعیت شما اورژانس است لطفا به ۱۱۵ زنگ بزنید و یا به نزدیکترین مرکز اورژانس مراجعه کنید. سیب سفید خدمات اورژانس ارائه نمی دهد.</string>
+    <string name="about_me">درباره من</string>
+    <string name="qualication">تخصص</string>
+    <string name="licensed_state">شهرهای مجاز طبابت</string>
+    <string name="schedule">ساعات ویزیت </string>
+    <string name="choose_first_available">اولین وقت خالی را انتخاب کن</string>
+    <string name="visit_now">ویزیت آنی</string>
+    <string name="book_an_appointment">رزور وقت ملاقات</string>
+    <string name="book_an_appointment_request">درخواست وقت ملاقات</string>
+    <string name="patient">بیمار:</string>
+    <string name="patient_capital">صبور: </string>
+    <string name="provider">پزشک:</string>
+    <string name="date">تاریخ:* </string>
+    <string name="would_you_like_this_appointment_by_">درخواست ویزیت تلفنی دارید یا تصویری؟</string>
+    <string name="please_enter_phone">تلفن تماس خود را وارد کنید:</string>
+    <string name="chat">چت</string>
+    <string name="audio">صوتی</string>
+    <string name="video">تصویری</string>
+    <string name="cancel">لغو درخواست</string>
+    <string name="book_appointment">رزرو وقت ویزیت</string>
+
+    <string name="my_past_appointment">ویزیت های قبلی</string>
+    <string name="my_future_appointment">ویزیت های آتی</string>
+    <string name="status">وضعیت:</string>
+    <string name="communication_not">پیام ها</string>
+    <string name="my_history">سوابق</string>
+    <string name="my_life_style">سبک زندگی من</string>
+    <string name="my_family_history">سوابق خانواده</string>
+    <string name="allergies">آلرژی ها:</string>
+    <string name="do_you_have_allergies">آیا آلرژی دارید؟</string>
+    <string name="medication_history">سوابق درمان:</string>
+    <string name="enter_strength">دوز دارو</string>
+    <string name="does_how_many_time">دوز/تعداد دفعات در روز)</string>
+    <string name="past_medical_sergical_history">سوابق پزشکی و یا جراحی ها></string>
+    <string name="smoking">مصرف سیگار:</string>
+    <string name="do_you_smoke">سیگار مصرف می کنید؟</string>
+    <string name="alcohol">مصرف الکل: </string>
+    <string name="do_you_take_alcohol">الکل مصرف می کنید؟</string>
+    <string name="family_history">سوابق پزشکی خانواده:</string>
+    <string name="do_you_have_any_family_medical_history">سابقه بیماری در خانواده دارید؟</string>
+    <string name="waist_size">دور کمر: (cm)</string>
+    <string name="height_size">قد: (cm)</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="do_you_get_atleast">آیا در شبانه روز حداقل هفت ساعت می خوابید؟</string>
+    <string name="other_medical_history"> سوابق پزشکی دیگر:</string>
+    <string name="do_you_other_medical">آیا سابقه پزشکی دیگری دارید؟</string>
+
+    <string name="other">Other</string>
+    <string name="add">Add</string>
+
+    <string name="check_weight">کنترل وزن</string>
+
+    <string name="check_blood_oxigen">کنترل اکسیژن خون</string>
+    <string name="check_tempture">کنترل دمای بدن</string>
+    <string name="watch_the_video">تماشای ویديو</string>
+    <string name="add_result_manually">اضافه کردن نتایج به صورت دستی</string>
+    <string name="see_previous_result">دیدن نتایج قبلی</string>
+    <string name="enquire_about_the_weight_scale">وزن خود را بدانید</string>
+    <string name="search">جستجو</string>
+    <string name="flip">ضربه بزنید</string>
+    <string name="details">مشخصات</string>
+    <string name="appointment">برنامه های ویزیت</string>
+    <string name="messages">پیام ها</string>
+    <string name="inbox">نامه های وارده</string>
+    <string name="sent">نامه های ارسالی</string>
+    <string name="compose_msg">نامه جدید</string>
+    <string name="event_testing">تست دوره ای</string>
+    <string name="doctor">پزشک</string>
+    <string name="message">پیام ها</string>
+    <string name="call">تماس</string>
+    <string name="to">به</string>
+    <string name="content">متن</string>
+    <string name="submit">ارسال</string>
+
+    <string name="faq_1">Dapibus sed cum, aliquam cras egestas enim elit in mattis?</string>
+    <string name="faq_2">Papibus sed cum,aliquam craselit in mattis?</string>
+    <string name="faq_3">Sed cum,aliquam cras egestas enim elit in mattis?</string>
+    <string name="faq_4">Dapibus sed cum, aliquam cras egestas mattis?</string>
+    <string name="faq_5">Papibus sed cum,aliquam craselit in mattis?</string>
+    <string name="faq_6">Sed cum,aliquam cras egestas enim elit in mattis?</string>
+    <string name="faq_7">Dapibus sed cum, aliquam cras egestas mattis?</string>
+    <string name="name_m">نام*</string>
+    <string name="subject">موضوع</string>
+    <string name="subject_capital">موضوع</string>
+    <string name="message_m">پیام*</string>
+    <string name="send_message">ارسال پیام</string>
+    <string name="blog">بلاگ</string>
+    <string name="medical_device">تجهیزات پزشکی</string>
+    <string name="faq">سوالات متداول</string>
+    <string name="contact_us">تماس با ما</string>
+    <string name="change_password">تغییر رمز عبور</string>
+    <string name="logout">خروج</string>
+    <string name="from_date">از تاریخ: </string>
+    <string name="to_date">تا تاریخ: </string>
+    <string name="e911md_will_transfer">سیب سفید مبالغ را به این بانک ارسال خواهد کرد:</string>
+
+    <string-array name="faq_array">
+        <item>@string/faq_1</item>
+        <item>@string/faq_2</item>
+        <item>@string/faq_3</item>
+        <item>@string/faq_4</item>
+        <item>@string/faq_5</item>
+        <item>@string/faq_6</item>
+        <item>@string/faq_7</item>
+    </string-array>
+
+
+    <!-- Doctor Home Screen String Tag Related-->
+    <string name="home_name">Dr. Tonny Discosta</string>
+    <string name="home_notification">هشدارها</string>
+    <string name="home_Message">پیام</string>
+
+    <!-- My Profile Screen Text-->
+
+    <string name="myprofile">حساب کاربری من</string>
+    <string name="myprofile_title">عنوان</string>
+    <string name="myprofile_firstname">نام</string>
+    <string name="myprofile_lastname">نام خانوادگی</string>
+
+    <string name="myprofile_email">پست الکترونیک</string>
+    <string name="myprofile_dob">تاریخ تولد</string>
+    <string name="myprofile_npinumber">شماره پروانه پزشکی</string>
+
+    <string name="myprofile_gender">جنسیت</string>
+    <string name="myprofile_country">کشور</string>
+    <string name="myprofile_city">شهر</string>
+    <string name="myprofile_state">استان</string>
+
+
+    <string name="myprofile_addressline1">نشانی ۱</string>
+    <string name="myprofile_addressline2">نشانی ۲</string>
+    <string name="myprofile_zipcode">صندوق پستی</string>
+
+    <string name="myprofile_mobile">تلفن همراه</string>
+    <string name="myprofile_notverified">شماره تلفن هنوز تایید نشده است</string>
+
+    <string name="myprofile_qualification">تخصص</string>
+    <string name="myprofile_language">زبان</string>
+
+
+    <string name="myprofile_sign">امضا</string>
+    <string name="myprofile_resume">سوابق کاری</string>
+
+    <string name="myprofile_save">تایید</string>
+    <string name="myprofile_send_code">ارسال کد</string>
+
+    <string name="myprofile_about_me">درباره من</string>
+    <string name="myprofile_button_save">ذخیره</string>
+
+
+    <!--Account Detail Screen -->
+
+    <string name="AccountDetail_BankName">نام بانک:</string>
+    <string name="AccountDetail_AccNamee">نام دارنده حساب:</string>
+    <string name="AccountDetail_AccountNo">شماره حساب:</string>
+
+    <string name="AccountDetail_BSB">کد شعبه:</string>
+
+    <string name="AccountDetail_PaypalEmail"> پست الکترونیکی:</string>
+    <string name="AccountDetail_papaltoget">پرداخت آنلاین:</string>
+    <string name="full_body">کل بدن</string>
+    <string name="head_of_brain">سر یا مغز</string>
+    <string name="gentilas_or_urinary">دستگاه تناسلی یا مجاری اداری</string>
+    <string name="abdomen">شکم</string>
+    <string name="leg">پا</string>
+    <string name="arm">دست</string>
+    <string name="neck_or_back">گردن یا کمر</string>
+    <string name="chest">قفسه سینه</string>
+    <string name="mouth_or_teeth">دهان و دندان</string>
+    <string name="neck">گردن</string>
+    <string name="nose">بینی</string>
+    <string name="ears">گوش</string>
+    <string name="skin">پوست</string>
+    <string name="eyes">چشم</string>
+    <string name="other_symptoms">علائم دیگر</string>
+    <string name="patient_details">مشخصات بیمار</string>
+    <string name="my_personal_note">یادداشت های شخصی</string>
+    <string name="docotor_avaiability">زمان های ویزیت پزشک</string>
+    <string name="my_patient_list">لیست بیماران من</string>
+    <string name="my_trasation">تراکنش های انجام شده</string>
+    <string name="report_a_problem">گزارش مشکل درسیستم</string>
+    <string name="doctor_profile">حساب کاربری پزشک</string>
+    <string name="select_country">کشور</string>
+    <string name="select_speciality">تخصص</string>
+    <string name="enter_pratice_year">سابقه طبابت</string>
+    <string name="phone">تلفن</string>
+    <string name="npi_number">پروانه پزشکی</string>
+    <string name="license_number">شماره مجوز پزشکی</string>
+    <string name="spoken_english">زبان مورد نظر</string>
+    <string name="attech_file">پیوست فایل</string>
+    <string name="consult_fee">هزینه ویزیت</string>
+    <string name="please_check_your_internet_connection_error">خطا! اینترنت متصل نیست </string>
+    <string name="شهر">City</string>
+    <string name="failed_registration">خطا در ثبت نام</string>
+    <string name="failed_login">خطا در ورود به سیستم!</string>
+    <string name="minutes_10"> ده دقیقه</string>
+    <string name="digits">0123456789</string>
+    <string name="at">در</string>
+    <string name="on">در</string>
+    <string name="all">همه</string>
+    <string name="defaults">پیش فرض</string>
+    <string name="date_dailog_title">تقویم</string>
+    <string name="hours">ساعات</string>
+    <string name="am">قبل از ظهر</string>
+    <string name="pm">بعد از ظهر</string>
+    <string name="minutes">دقیقه</string>
+    <string name="select_a_time_zone">منطقه زمانی/جغرافیایی خود را انتخاب کنید</string>
+    <string name="delete">حذف</string>
+    <string name="edit">ویرایش</string>
+    <string name="name_of_card">نام روی کارت:*</string>
+    <string name="card_number">شماره کارت:*</string>
+    <string name="cvv">CVV * :</string>
+    <string name="expiration_month">ماه انقضا* :</string>
+    <string name="expiration_year">سال انقضا* :</string>
+    <string name="is_your_billing">نشانی ارسال صورتحساب با نشانی فعلی شما یکسان است؟</string>
+    <string name="billing_address">نشانی ارسال صورتحساب* :</string>
+    <string name="billing_address_2">نشانی ارسال صورتحساب( خط ۲ ) :</string>
+    <string name="select_country_m">کشور* :</string>
+    <string name="select_state_m">استان* :</string>
+    <string name="city_m">شهر* :</string>
+    <string name="zip">کدپستی: :</string>
+    <string name="do_you_have_insurance">آیا بیمه هستید؟</string>
+    <string name="insurance_name"> نوع بیمه؟</string>
+    <string name="save_details">ذخیره مشخصات</string>
+    <string name="insurance_number">شماره بیمه شده:</string>
+    <string name="first_name_m">نام* :</string>
+    <string name="billing_address_line_1">نشانی خط ۱:</string>
+    <string name="country">کشور:</string>
+    <string name="state">استان:</string>
+    <string name="relationship">نسبت* :</string>
+    <string name="my_profile">حساب کاربری من</string>
+    <string name="my_account">حساب بانکی</string>
+    <string name="my_availability">وقت های ویزیت</string>
+    <string name="my_patient">لیست بیماران </string>
+    <string name="check_my_room">وقت های خالی ویزیت</string>
+    <string name="my_profile_would_apear">پروفایلی که برای بیماران نمایش داده می شود</string>
+
+    <string-array name="hoursarray">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+
+
+    <string-array name="minutes_array">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+
+
+    </string-array>
+
+    <string name="jan">Jan</string>
+    <string name="feb">Feb</string>
+    <string name="mar">Mar</string>
+    <string name="apr">Apr</string>
+    <string name="may">May </string>
+    <string name="jun">Jun</string>
+    <string name="jly">Jul</string>
+    <string name="aug">Aug</string>
+    <string name="sep">Sep</string>
+    <string name="oct">Oct</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Dec</string>
+
+
+    <string-array name="months">
+        <item>@string/jan</item>
+        <item>@string/feb</item>
+        <item>@string/mar</item>
+        <item>@string/apr</item>
+        <item>@string/may</item>
+        <item>@string/jun</item>
+        <item>@string/jly</item>
+        <item>@string/aug</item>
+        <item>@string/sep</item>
+        <item>@string/oct</item>
+        <item>@string/nov</item>
+        <item>@string/dec</item>
+
+    </string-array>
+
+    <string-array name="languages">
+        <item>@string/english</item>
+        <!--<item>@string/french</item>-->
+        <item>@string/persian</item>
+
+    </string-array>
+
+    <string name="english">انگلیسی</string>
+    <string name="french">فارسی</string>
+    <string name="persian">فارسی</string>
+
+    <string name="firstname_m">نام:</string>
+    <string name="name">نام</string>
+    <string name="what_happen">شرح دهید چه اتفاقی افتاد</string>
+    <string name="enter_year_started">از چه زمانی شروع شد</string>
+    <string name="do_you_have_medical_history">سابقه بیماری خاصی دارید؟</string>
+    <string name="enter_how_many">چند بار؟</string>
+    <string name="enter_how_many_drinking_day">چند بار روز در هفته الکل مصرف می کنید؟</string>
+    <string name="enter_waist">دور کمر</string>
+    <string name="enter_height">قد</string>
+    <string name="enter_how_name_of_condition">وضعیت را بنویسید</string>
+    <string name="enter_who_in_family">چه کسی در خانواده؟</string>
+    <string name="dont_known">ناشناخته است؟</string>
+    <string name="refill">دوباره وارد کنید</string>
+
+    <string name="failed_updation">خطا در بروزرسانی</string>
+    <string name="added_member_detail">اضافه کردن عضو خانواده</string>
+    <string name="member_name">نام</string>
+    <string name="member_email">پست الکترونیک</string>
+    <string name="member_relation">نسبت</string>
+    <string name="member_relation_new">نسبت</string>
+    <string name="member_genderl">جنسیت</string>
+
+
+    <string-array name="gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+
+    </string-array>
+
+
+
+    <string name="systolic_mmHg">فشار خون سیستولیک (بالا), mmHg</string>
+    <string name="diastolic_mmHg">فشار خون دیاستولیک (پایین), mmHg</string>
+    <string name="pulse_bpm">ضربان در دقیقه</string>
+
+
+    <string name="temperature_value">دمای بدن°C</string>
+    <string name="waist">دور کمر</string>
+
+    <string name="s_no">تعداد.</string>
+
+    <string name="blood_oxygen">اکسیژن خون</string>
+    <string name="bmi">BMI</string>
+    <string name="ecg">نوار قلب</string>
+    <string name="ent">گوش و بینی</string>
+    <string name="report_skin">پوست</string>
+    <string name="heart_rate">ضربان قلب</string>
+    <string name="height">قد</string>
+    <string name="temperature">دمای بدن</string>
+    <string name="waist_circumference">دور کمر</string>
+    <string name="weight">وزن</string>
+    <string name="error_str_subject">یک موضوع وارد کنید</string>
+    <string name="error_str_content">متن را وارد کنید</string>
+    <string name="my_location">موقعیت من: </string>
+    <string name="appointment_date">تاریخ ویزیت:</string>
+    <string name="appointment_time">زمان ویزیت:</string>
+    <string name="appointment_mode">نوع</string>
+    <string name="search_by_date">جستجو بر أساس تاریخ</string>
+    <string name="preferred_time">زمان مورد نظر:</string>
+    <string name="all_time">همه زمان ها</string>
+    <string name="speciality">تخصص: </string>
+    <string name="all_speciality">همه تخصص ها</string>
+    <string name="language"> زبان: </string>
+    <string name="provider_name">نام پزشک:</string>
+    <string name="search_by_name">جستجو بر أساس نام</string>
+    <string name="reson_for_visit">دلیل ویزیت</string>
+    <string name="choose_pharmcy">انتخاب داروخانه</string>
+    <string name="payment">پرداخت</string>
+    <string name="what_is_reason_of_appointment">دلیل تقاضای ویزیت چیست؟?(ex: Sore Throat)</string>
+    <string name="additional_comments_or_concerns">نظرات و یا نگرانی های دیگری دارید؟</string>
+    <string name="add_a_photo">عکس آپلود کنید (برای مواردی همچون زخم ها و یا التهاب ها..)</string>
+    <string name="browse">مرورگر</string>
+    <string name="back">کمر</string>
+    <string name="continue_s">ادامه</string>
+    <string name="check_out_with_paypal">پرداخت با کارت</string>
+    <string name="voucher">کوپن</string>
+    <string name="card">کارت</string>
+    <string name="time">زمان:* </string>
+    <string name="type">نوع:* </string>
+    <string name="change_pharmacy">تغییر داروخانه</string>
+    <string name="address_m_1">نشانی*</string>
+    <string name="phone_m">تلفن*</string>
+    <string name="save">ذخیره</string>
+    <string name="send_pharmacy">ارسال به داروخانه</string>
+    <string name="change_pharmacy_success">داروخانه ذخیره شد</string>
+    <string name="zip_m">صندوق پستی*</string>
+    <string name="voucher_code">کد کوپن</string>
+    <string name="enter_your_voucher_code">کد کوپن خود را وارد کنید</string>
+    <string name="card_number_1">شماره کارتr</string>
+    <string name="expiration">تاریخ انقضا</string>
+    <string name="month">ماه</string>
+    <string name="year">سال</string>
+    <string name="name_of_card_1">دارنده کارت</string>
+    <string name="pay_with_credit_card">پرداخت با کارت اعتباری</string>
+    <string name="pay_with_paypal">پرداخت انلاین</string>
+    <string name="pay_with_voucher">پرداخت با کوپن</string>
+    <string name="title">لطفا منتظر بمانید ....</string>
+    <string name="paypal">پرداخت آنلاین</string>
+    <string name="please_enter_your_code">لطفا کد کوپن خود را وارد کنید</string>
+    <string name="appointment_success">وقت ویزیت و پرداخت با موفقیت انجام شد</string>
+    <string name="for_10minutes">ده دقیقه</string>
+    <string name="fee">زینه: </string>
+    <string name="reject">رد</string>
+    <string name="your_request_successfully_saved">تقاضای شما با موفقیت ذخیره شد</string>
+    <string name="communication_note">پیغام</string>
+    <string name="physicion_order">تجویز پزشک</string>
+    <string name="patient_name">نام بیمار:</string>
+    <string name="physician">پزشک</string>
+    <string name="signature">امضا</string>
+    <string name="please_choose_atleast_one_availability">لطفا حداقل یک زمان را انتخاب کنید</string>
+    <string name="user_select_one_item_at_a_time">دوباره یک زمان را انتخاب کردید</string>
+
+    <string-array name="prefferred_time">
+        <item>8 am</item>
+        <item>9 am</item>
+        <item>10 am</item>
+        <item>11 am</item>
+        <item>12 pm</item>
+        <item>1 pm</item>
+        <item>2 pm</item>
+        <item>3 pm</item>
+        <item>4 pm</item>
+        <item>5 pm</item>
+        <item>6 pm</item>
+        <item>7 pm</item>
+        <item>8 pm</item>
+        <item>9 pm</item>
+        <item>10 pm</item>
+        <item>11 pm</item>
+        <item>12 am</item>
+        <item>1 am</item>
+        <item>2 am</item>
+        <item>3 am</item>
+        <item>4 am</item>
+        <item>5 am</item>
+        <item>6 am</item>
+        <item>7 am</item>
+
+    </string-array>
+
+    <string-array name="language_array">
+        <item>Arabic</item>
+        <item>Chinese</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Gujarati</item>
+        <item>Haitian Creole</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Igbo</item>
+        <item>Italian</item>
+        <item>Korean</item>
+        <item>Lithuanian</item>
+        <item>Malayalam</item>
+        <item>Panjabi</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Pushto</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Telugu</item>
+        <item>Ukrainian</item>
+
+    </string-array>
+
+
+    <!--QB string-->
+    <string name="pref_resolution_key">وضوع درخواستی</string>
+
+    <string name="pref_startbitrate_key">شروع ضربان قلب</string>
+    <string name="pref_startbitrate_default">پیش فرض</string>
+
+    <string name="pref_startbitratevalue_key">startbitratevalue_preference</string>
+    <string name="pref_startbitratevalue_default">۱۰۰۰</string>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_default">صحیح</string>
+
+    <string name="pref_audiocodec_key">pref_audio_codec</string>
+    <string name="pref_audiocodec_def">ISAC</string>
+    <string name="accepted">پذیرفته شد</string>
+
+
+    <string name="rejected">رد شد</string>
+    <string name="noAnswer">پاسخی نیامد</string>
+    <string name="hungUp">قطع شد</string>
+    <string name="closed">بسته شد</string>
+    <string name="time_out">عدم اتصال</string>
+    <string name="failed">قطع شد</string>
+    <string name="checking">در حال کنترل....</string>
+    <string name="connected">وصل شد</string>
+    <string name="disconnected">قطع شد</string>
+
+
+    <!--Fragment Video Chat-->
+    <string name="text_mute">بی صدا</string>
+    <string name="text_Video">ویدئو</string>
+    <string name="text_Speaker">بلندگو</string>
+    <string name="text_Button_End">پایان</string>
+    <string name="text_Button_Accept">قبول</string>
+    <string name="wait">لطفا منتظر بمانید....</string>
+
+    <string name="please_choose_from_date">لطفا تاریخ شروع را انتخاب کنید</string>
+    <string name="please__choose_from_hours">لطفا ساعت شروع را انتخاب کنید</string>
+
+    <string name="please__choose_from_time">لطفا زمان شروع را انتخاب کنید</string>
+    <string name="please__choose_timezone">لطفا منطقه زمانی را انتخاب کنید</string>
+    <string name="please__choose_to_date">لطفا تاریخ پایان را انتخاب کنید</string>
+    <string name="please_choose_to_time">لطفا زمان پایان را انتخاب کنید</string>
+    <string name="please_choose_to_hours">لطفا ساعت پایان را انتخاب کنید</string>
+    <string name="please_choose_from_minutes">لطفا دقیقه شروع را انتخاب کنید</string>
+    <string name="please_choose_to_minutes">لطفا دقیقه پایان را انتخاب کنید</string>
+
+    <string name="please_choose_weed">روزهای هفته را انتخاب کنید</string>
+
+    <string name="sun">یکشنبه</string>
+    <string name="mon">دوشنبه</string>
+    <string name="tue">سه شنبه</string>
+    <string name="wed">چهارشنبه</string>
+    <string name="thus">پنجشنبه </string>
+    <string name="fri">جمعه</string>
+    <string name="sat">شنبه</string>
+
+    <string name="sunday">یکشنبه</string>
+    <string name="monday">دوشنبه</string>
+    <string name="tueday">سه شنبه</string>
+    <string name="wedday">چهارشنبه</string>
+    <string name="thusday">پنجشنبه </string>
+    <string name="friday">جمعه</string>
+    <string name="satday">شنبه</string>
+
+    <string-array name="week">
+        <item>@string/sun</item>
+        <item>@string/mon</item>
+        <item>@string/tue</item>
+        <item>@string/wed</item>
+        <item>@string/thus</item>
+        <item>@string/fri</item>
+        <item>@string/sat</item>
+
+    </string-array>
+
+    <string-array name="week_full">
+        <item>@string/sunday</item>
+        <item>@string/monday</item>
+        <item>@string/tueday</item>
+        <item>@string/wedday</item>
+        <item>@string/thusday</item>
+        <item>@string/friday</item>
+        <item>@string/satday</item>
+
+    </string-array>
+
+    <string name="select_week_days">روزهای هفته را انتخاب کنید</string>
+    <string name="order_date">تاریخ سفارش:</string>
+    <string name="episode_date">بخش های مرتبط</string>
+    <string name="physicial_sign">امضای پزشک:</string>
+    <string name="date_">تاریخ:</string>
+    <string name="status_">وضعیت</string>
+    <string name="filter">فیلتر</string>
+    <string name="filter_capital">فیلتر</string>
+    <string name="please_fill_all_fields">لطفا تمام قسمت ها را پر کنید!</string>
+    <string name="please_fill_communication_fields">لطفا تمام قسمت ها را پر کنید!</string>
+    <string name="please_fill_signature_date">لطفا تاریخ امضا را وارد کنید</string>
+    <string name="singnature">امضا</string>
+    <string name="check_blood_pressure">فشار خون را چک کنید</string>
+    <string name="check_ecg">ضربان قلب را چک کنید</string>
+    <string name="check_ent">قسمت گوش و بینی را چک کنید</string>
+    <string name="check_skin">علائم پوست را چک کنید</string>
+    <string name="no_sd_card">کارت حافظه موجود نیست</string>
+    <string name="choose_exsting">از موارد موجود انتخاب کنید</string>
+    <string name="user_camera">استفاده از دوربین</string>
+    <string name="choose_option">گزینه انتخاب را بزنید:</string>
+    <string name="print_receipt">رسید را پرینت کنید:</string>
+    <string name="allow_my_treating">پزشکان معالج من بتوانند سوابق پزشکی من را مطالعه کنند</string>
+    <string name="old_password">رمز قبلی</string>
+    <string name="new_password">رمز جدید</string>
+    <string name="confirm_password">تایید رمز جدید</string>
+    <string name="appointment_on">ویزیت در</string>
+    <string name="when">چه موقع؟</string>
+    <string name="billing_address_new">200 Braker Ave, Lowell MA 01830 \nUnited States \nPhone: 774-108-1234 \nSibSefid@gmail.com</string>
+    <string name="appointment_status">وضعیت ویزیت:</string>
+    <string name="time_">زمان:</string>
+    <string name="doctor_name">نام پزشک:</string>
+    <string name="payment_by">نوع پرداخت:</string>
+    <string name="contact_us_address">240 Barker Ave, Lowell MA 01850 \nUnited States</string>
+    <string name="pharmacy">داروخانه</string>
+    <string name="ThereIsNoMessages">پیغام دریافت نشد</string>
+    <string name="NoAppointmentAvailable">زمان ویزیت تعیین نشده است</string>
+    <string name="ViewMore">بیشتر</string>
+    <string name="select_designation">انتخاب</string>
+    <string name="error_attachment">سابقه طبابت خود را اینجا اضافه کنید</string>
+    <string name="enquire_about_the_blood_oxygen">اکسیژن خون خود را بسنجید</string>
+    <string name="enquire_about_the_temp">دمای بدن خود را بسنجید</string>
+    <string name="enquire_about_the_blood_pressure">فشار خون را بسنجید</string>
+    <string name="enquire_about_the_ecg">ضربان قلب خود را بسنجید</string>
+    <string name="enquire_about_the_ent">گوش و بینی خود را چک کنید</string>
+    <string name="enquire_about_the_skin">پوست خود را چک کنید</string>
+
+    <string name="weightPound">وزن (کیلوگرم)</string>
+    <string name="MeasureDate">تاریخ اندازه گیری</string>
+    <string name="oxygenvalue">میزان اکسیژن (٪)</string>
+    <string name="AddWeightResultManualy">نتیجه اندازه گیری وزن را دستی وارد کنید</string>
+    <string name="AddBloodOxygenResultManualy">نتیجه تست فشار خون را دستی وارد کنید</string>
+    <string name="add_temperature_result_manualy">دمای بدن خود را دستی وارد کنید</string>
+    <string name="add_blood_pressure_result_manualy">فشار خون خود را دستی وارد کنید</string>
+    <string name="add_ecg_result_manually">ضربان قلب را دستی وارد کنید</string>
+    <string name="add_ent_result_manually">گزارشات گوش و بینی را دستی وارد کنید</string>
+    <string name="temperature_c">دمای بدن(°C) </string>
+    <string name="time_c">زمان (ساعت:دقیقه)</string>
+    <string name="pulse_value"> ضربان قلب (bpm)</string>
+    <string name="diastolic_value">فشار خون پایین (mmHg)</string>
+    <string name="systolic_value">فشار خون بالا (mmHg)</string>
+    <string name="upload_file">بارگذاری فایل</string>
+    <string name="uploaded_date">وارد کردن تاریخ</string>
+    <string name="upload">بارگذاری</string>
+    <string name="upload_photo">بارگذاری عکس</string>
+    <string name="cooming_soon">بزودی...</string>
+    <string name="clinical_dashboard">داشبورد پزشکی</string>
+    <string name="fragment_main_btn_chat">چت کنید</string>
+    <string name="not_editable">برای این سابقه، یک ویزیت تایید شده و یا معوق وجود دارد لذا ویرایش آن ممکن نیست.</string>
+
+    <string name="start_date">تاریخ شروع</string>
+    <string name="end_date">تاریخ پایان</string>
+    <string name="drug_dose">دوز دارو</string>
+    <string name="time_taken">زمان مصرف</string>
+    <string name="select_week">تعداد روزهای مصرف در هفته </string>
+    <string name="use_of_note">نحوه استفاده</string>
+    <string name="select_medicine">دارو را انتخاب کنید</string>
+    <string name="refill_medicine">نام دارو را دوباره انتخاب کنید</string>
+    <string name="rmedicine">دارو</string>
+    <string name="qty">تعداد*</string>
+    <string name="comment">نظرات*</string>
+    <string name="request_appointment">درخواست ویزیت</string>
+    <string name="availability_note">هیچ وقت آزادی برای ویزیت وجود ندارد. در صورت تمایل به ویزیت توسط این پزشک گزینه درخواست وقت ویزیت را انتخاب کنید. ما تلاش می کنیم وقت ویزیتی را برای شما تعیین کنیم.</string>
+
+    <string name="appointment_request">درخواست وقت ویزیت</string>
+    <string name="app_desire_date">زمان مورد نظر ویزیت*</string>
+    <string name="ideal_time_visit">زمان ایده آل برای ویزیت*</string>
+    <string name="best_no_contact">بهترین شماره برای تماس با شما*</string>
+    <string name="whats_the_reason">دلیل درخواست ویزیت شما چیست؟ (به عنوان مثال: گوش درد)*</string>
+    <string name="adding_comment">نظرات و یا مبحث دیگری برای مطرح کردن دارید؟*</string>
+    <string name="i_agree_to"> موافقم</string>
+    <string name="terms_counditions"> شرایط و ضوابط</string>
+    <string name="submit_request">ارسال درخواست</string>
+    <string name="no_record_found">سابقه ای یافت نشد</string>
+    <string name="phone_consultation">مشاوره تلفنی</string>
+    <string name="fill_this_form">برای درخواست ویزیت توسط این پزشک می بایست فرم ذیل را پر کنید. ما بزودی با شما تماس خواهیم گرفت. </string>
+    <string name="doctor_is_on_24hrs">گزینه پزشک در دسترس یک خدمت شبانه روزی است که از طریق آن می توانید مشاوره ها و ویزیت های آنی با اولین پزشک در دسترس داشته باشید </string>
+    <string name="no_availability">هیچ زمانی برای ویزیت تعیین نشده است!</string>
+    <string name="no_ticket_found">درخواست رفع مشکل یافت نشد!</string>
+    <string name="no_personal_note_found">یادداشتی یافت نشد!</string>
+    <string name="my_previous_ticket">درخواست رفع مشکل قبلی من</string>
+    <string name="appointment_over">زمان ویزیت تمام شد</string>
+    <string name="your_time_is_up_for_appointment">سپاسگزاریم. زمان ویزیت شما به پایان رسید</string>
+    <string name="ok">قبول</string>
+    <string name="electrocarding">نوار قلب</string>
+    <string name="my_time">زمان من</string>
+    <string name="not_responed_by_doctor">پزشک پاسخ نداده است</string>
+    <string name="note_on">یادداشت روز:</string>
+    <string name="note">یادداشت:</string>
+    <string name="about">درباره</string>
+    <string name="add_a_new_problem">مشکل جدید را اضافه کنید</string>
+    <string name="previous_ticket">درخواست های قبلی من برای رفع مشکل</string>
+    <string name="problem_summary">خلاصه شرح مشکل</string>
+    <string name="contact_us_at">contact@sibsefid.com</string>
+    <string name="from">از جانب :</string>
+    <string name="message_capital">پیام:</string>
+    <string name="account_detail">جزئیات حساب</string>
+    <string name="patients">بیماران:</string>
+
+</resources>

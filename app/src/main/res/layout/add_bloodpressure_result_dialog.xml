@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/popup_border_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="#F3F3F3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_blood_pressure_result_manualy"
+                            android:textColor="@color/profile_button"
+                            android:textSize="@dimen/sp_18" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout style="@style/MyProfile_linear">
+
+                            <TextView
+                                style="@style/MyProfile_TextView"
+                                android:text="@string/systolic_value" />
+
+                            <EditText
+                                android:id="@+id/mSystolicValue"
+                                style="@style/MyProfile_EditText"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textSize="@dimen/text_size_default"></EditText>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/MyProfile_linear">
+
+                            <TextView
+                                style="@style/MyProfile_TextView"
+                                android:text="@string/diastolic_value" />
+
+                            <EditText
+                                android:id="@+id/mDiastolicValue"
+                                style="@style/MyProfile_EditText"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textSize="@dimen/text_size_default"></EditText>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/MyProfile_linear">
+
+                            <TextView
+                                style="@style/MyProfile_TextView"
+                                android:text="@string/pulse_value" />
+
+                            <EditText
+                                android:id="@+id/mPulseValue"
+                                style="@style/MyProfile_EditText"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:textSize="@dimen/text_size_default"></EditText>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout style="@style/MyProfile_linear">
+
+                            <TextView
+                                style="@style/MyProfile_TextView"
+                                android:text="@string/MeasureDate" />
+
+                            <TextView
+                                android:id="@+id/mDate"
+                                style="@style/MyProfile_EditText"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:textSize="@dimen/text_size_default"></TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/MyProfile_linear">
+
+                            <TextView
+                                style="@style/MyProfile_TextView"
+                                android:text="@string/time_c" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_3"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:id="@+id/mTime"
+                                    android:layout_width="120dp"
+                                    android:layout_height="@dimen/dp_40"
+
+                                    android:background="@drawable/edittext_round_border_bg"
+                                    android:padding="@dimen/dp_5"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/text_size_default"></TextView>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dp_10"
+                                    android:orientation="vertical">
+
+
+                                    <Spinner
+                                        android:id="@+id/mTimeGmt"
+                                        style="@style/MyProfile_spinner"
+                                        android:layout_width="@dimen/dp_100"></Spinner>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/mSaveBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginBottom="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_20"
+                            android:background="@color/profile_button"
+                            android:text="@string/save"
+                            android:textColor="@color/white_color" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <ImageView
+
+            android:id="@+id/imageView_close"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="top|end"
+            android:clickable="true"
+            android:src="@mipmap/cross" />
+    </FrameLayout>
+
+</LinearLayout>

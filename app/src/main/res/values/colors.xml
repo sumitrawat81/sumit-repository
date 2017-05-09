@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#15BFD3</color>
+    <color name="colorPrimaryDark">#0ea4b6</color>
+    <color name="colorAccent">#FF0D25</color>
+    <color name="white_color">#FFFFFF</color>
+
+    <color name="q_green">#008000</color>
+    <color name="text_color_black">#000</color>
+    <color name="dark_white">#e1dddd</color>
+    <color name="gray">#848587</color>
+
+
+    <color name="black">#000000</color>
+    <color name="red">#FF001B</color><!--FF002A-->
+    <color name="home_notification_text">#3D9CA3</color>
+    <color name="stoke_border">#cccccc</color>
+
+
+    <!-- my Profile Sccreen Color-->
+    <color name="profile_border">#cccccc</color>
+    <color name="profile_text">#696969</color>
+    <!--<color name="profile_button">#3D9CA3</color>-->
+    <color name="profile_button">#3ec1d6</color>
+    <color name="profile_inner_text">#333333</color>
+    <color name="tras_white">#7B858A</color>
+    <color name="light_theme">#d0dcde</color>
+
+    <color name="transparent">#00000000</color>
+
+</resources>

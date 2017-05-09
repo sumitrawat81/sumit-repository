@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.sibsefid.fragemnts.patient.PContactUs">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mSendMsgBtn"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@mipmap/contactus_banner"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/contact_us_at"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size_default" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="774-420-1054"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size_l"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/contact_us_address"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/text_size_l"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/mName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:background="@drawable/registre_input_field"
+                    android:hint="@string/name_m"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_default"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/mEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/registre_input_field"
+                    android:hint="@string/email_m"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_default"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/mMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/registre_input_field"
+                    android:hint="@string/mobile_m"
+                    android:inputType="number"
+                    android:maxLength="12"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_default"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/mSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/registre_input_field"
+                    android:hint="@string/subject"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_default"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/mMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/msg_input_field_height"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/registre_input_field"
+                    android:gravity="top"
+                    android:hint="@string/message_m"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_default"
+
+
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mSendMsgBtn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="@string/send_message"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

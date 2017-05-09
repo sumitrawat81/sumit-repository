@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingStart="@dimen/dp_10"
+    android:paddingEnd="@dimen/dp_10">
+
+    <LinearLayout
+        android:id="@+id/llReceiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:paddingBottom="@dimen/dp_10">
+
+            <LinearLayout
+                android:id="@+id/llReceiver2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="visible">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgReceiver"
+                    android:layout_width="@dimen/chat_window_cimg_w"
+                    android:layout_height="@dimen/chat_window_cimg_w"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/profile" />
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toEndOf="@+id/imgSender">
+
+                    <LinearLayout
+                        android:id="@+id/llMsgRec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="-5dp"
+                            android:src="@drawable/ic_left_pin" />
+
+                        <TextView
+                            android:id="@+id/txtMsgRec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_rect_sender"
+                            android:gravity="center|start"
+                            android:minWidth="50dp"
+                            android:padding="@dimen/dp_10"
+                            android:text="sdfasdf"
+                            android:textColor="@color/white_color" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relRecvr_audio_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgAttachRec"
+                    android:layout_width="@dimen/attached_img_h"
+                    android:layout_height="@dimen/attached_img_h"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:scaleType="centerCrop" />
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="10dp"-->
+                <!-->-->
+
+
+                <!--</LinearLayout>-->
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"></LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Today"
+        android:textColor="@color/white_color" />
+
+    <LinearLayout
+        android:id="@+id/llSender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="end">
+
+            <LinearLayout
+                android:id="@+id/llSender2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relSender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/txtMsgSend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_toStartOf="@+id/imgRightA"
+                        android:background="@drawable/round_rect_reciever"
+                        android:gravity="center|start"
+                        android:minWidth="50dp"
+                        android:padding="@dimen/dp_10"
+                        android:text=""
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/imgRightA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="-5dp"
+                        android:src="@drawable/ic_right_pin"
+                        android:tint="@color/white_color" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

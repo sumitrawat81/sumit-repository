@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="true"
+    android:paddingTop="@dimen/dp_10">
+
+    <EditText
+        android:id="@+id/mTitleTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:editable="false"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="@dimen/dp_16" />
+
+    <ListView
+        android:id="@+id/lvChatW"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btns_lay"
+        android:layout_below="@+id/mTitleTimer"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/btns_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_10">
+
+        <LinearLayout
+            android:id="@+id/llSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_color"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/smile_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:src="@drawable/smile"
+
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/md_btn_selected" />
+
+            <EditText
+                android:id="@+id/emojiconEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:drawablePadding="@dimen/dp_5"
+
+                android:hint="type msg..."
+                android:padding="@dimen/dp_5"
+
+                android:visibility="visible">
+
+                <requestFocus />
+            </EditText>
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgSendMsg"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/send_message"
+                    android:tint="@color/mdtp_accent_color_dark" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/emojicons"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/llSendMessage"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+</RelativeLayout>

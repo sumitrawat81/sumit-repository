@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="@dimen/dp_10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/rdgroup"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@mipmap/allergies_icon"
+                        android:drawablePadding="@dimen/dp_2"
+                        android:text="@string/other_medical_history"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/text_size_m" />
+
+                    <TextView
+                        android:id="@+id/mALGQue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/do_you_other_medical"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_default" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rdgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RadioButton
+                        android:id="@+id/mALGYesNoCheckBox"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="@string/yes"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_default"
+                        android:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/mALGNoCheckBox"
+                        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:checked="true"
+                        android:text="@string/no"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_size_default"
+                        android:visibility="visible" />
+
+                </RadioGroup>
+
+                />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/parent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout style="@style/MyProfile_linear">
+
+                        <TextView
+                            style="@style/MyProfile_TextView"
+                            android:text="@string/subject" />
+
+                        <EditText
+                            android:id="@+id/mSubject"
+                            style="@style/MyProfile_EditText"
+                            android:singleLine="true"
+
+                            android:textSize="@dimen/text_size_default"></EditText>
+
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/MyProfile_linear">
+
+                        <TextView
+                            style="@style/MyProfile_TextView"
+                            android:text="@string/upload_file" />
+
+                        <TextView
+                            android:id="@+id/mBrowseFile"
+                            style="@style/MyProfile_EditText"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:hint="@string/browse"
+                            android:textSize="@dimen/text_size_default"></TextView>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/mUploadBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:background="@color/profile_button"
+                        android:text="@string/upload"
+                        android:textColor="@color/white_color" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/gray"
+                android:layout_marginTop="@dimen/dp_5"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/added_member_head"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/subject"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_1"
+            android:layout_weight=".3"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/file_name"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_1"
+            android:layout_weight=".3"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/uploaded_date"
+            android:textSize="@dimen/text_size_default" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_1"
+            android:layout_weight=".2"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/action"
+            android:textSize="@dimen/text_size_default" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mOMHistryparent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_1"
+        android:orientation="vertical"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/dp_5"/>
+</LinearLayout>

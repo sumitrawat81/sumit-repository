@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+    <com.sibsefid.util.CustomImage
+        android:id="@+id/mProductImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250"
+        android:layout_centerHorizontal="true"
+
+        android:background="@mipmap/profile_img_infonew"
+
+        />
+
+    <TextView
+        android:id="@+id/mProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mProductImage"
+        android:layout_marginStart="10dp"
+        android:text="@string/electrocarding"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_m"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mProductSummery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mProductName"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text=" "
+        android:textSize="@dimen/text_size_default"
+
+        />
+
+    <TextView
+        android:id="@+id/mProductDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mProductSummery"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text=" "
+        android:textSize="@dimen/text_size_default"
+
+        />
+
+    <TextView
+        android:id="@+id/txtShowMoreLess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mProductDes"
+        android:gravity="end"
+        android:padding="@dimen/dp_5"
+        android:text="@string/ViewMore"
+        android:textColor="@color/red" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/txtShowMoreLess"
+        android:background="@color/dark_white"></View>
+
+
+</RelativeLayout>

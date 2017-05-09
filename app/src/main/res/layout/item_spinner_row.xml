@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textview_spinner_Row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:gravity="center|start"
+    android:textColor="@color/profile_inner_text"
+    android:textSize="@dimen/text_size_default">
+
+</TextView><!-- android:background="@drawable/spinner_popup_text_row_bg"-->

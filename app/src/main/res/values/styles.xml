@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="QTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/q_green</item>
+        <item name="android:colorBackground">@color/q_green</item>
+        <item name="android:textAppearance">@style/QText</item>
+    </style>
+
+
+    <style name="QText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/x_text_size</item>
+        <item name="android:textColor">@color/white_color</item>
+
+
+    </style>
+
+
+    <style name="MyProfile_EditText">
+        <item name="android:paddingStart">@dimen/dp_5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_marginTop">@dimen/dp_3</item>
+        <item name="android:background">@drawable/edittext_round_border_bg</item>
+    </style>
+
+    <style name="MyProfile_TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/profile_text</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+    </style>
+
+    <style name="MyProfile_linear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MyProfile_linear_2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dp_20</item>
+        <item name="android:layout_marginEnd">@dimen/dp_30</item>
+        <item name="android:layout_marginTop">@dimen/dp_10</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MyProfile_spinner">
+        <item name="android:paddingStart">@dimen/dp_10</item>
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_marginTop">@dimen/dp_3</item>
+        <item name="android:background">@drawable/spinner_round_border_bg</item>
+    </style>
+
+    <style name="Appointment_spinner">
+        <item name="android:paddingStart">@dimen/dp_10</item>
+        <item name="android:overlapAnchor">false</item>
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_marginTop">@dimen/dp_3</item>
+        <item name="android:background">@drawable/spinner_border_appointment_bg</item>
+    </style>
+
+    <style name="MyProfile_Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:background">@drawable/button_myprofile_bg</item>
+    </style>
+
+    <style name="MyMessage_content_view">
+        <item name="android:paddingStart">@dimen/dp_5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_100</item>
+        <item name="android:layout_marginTop">@dimen/dp_3</item>
+        <item name="android:background">@drawable/edittext_round_border_bg</item>
+    </style>
+
+</resources>

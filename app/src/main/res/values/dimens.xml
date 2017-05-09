@@ -1,0 +1,74 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="login_type_page_btn_margin">30dp</dimen>
+    <dimen name="text_size_default">13sp</dimen>
+    <dimen name="text_size_default_11">11sp</dimen>
+    <dimen name="login_type_page_btn_text_size_m">16sp</dimen>
+    <dimen name="text_size_l">18sp</dimen>
+    <dimen name="text_size_m">16sp</dimen>
+    <dimen name="email_field_btn_width">80dp</dimen>
+    <dimen name="register_input_field_padding">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="x_text_size">20sp</dimen>
+    <dimen name="margin_top_input_field">15dp</dimen>
+    <dimen name="input_field_height">45dp</dimen>
+    <dimen name="input_field_height_50">50dp</dimen>
+    <dimen name="msg_input_field_height">100dp</dimen>
+    <dimen name="product_device_size">75dp</dimen>
+
+
+    /********************Commomn Sp******************************/
+
+
+    <dimen name="sp_8">8sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+
+    /******************common dp*************/
+
+
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_130">130dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+    <dimen name="dp_170">170dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_250">250dp</dimen>
+    <dimen name="patient_grid_height">100dp</dimen>
+    <dimen name="patient_see_doctor_height">230dp</dimen>
+    <integer name="color_code">000000</integer>
+
+    <dimen name="grid_item_divider">4dp</dimen>
+    <dimen name="chat_window_cimg_w">50dp</dimen>
+    <dimen name="attached_img_h">150dp</dimen>
+    <dimen name="chat_window_card_rad">4dp</dimen>
+    <dimen name="strokeWidh">1dp</dimen>
+    <dimen name="txt_normal">16sp</dimen>
+
+</resources>

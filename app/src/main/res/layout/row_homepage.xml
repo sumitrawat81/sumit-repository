@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clickBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/patient_grid_height"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="@dimen/dp_70"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+
+        android:src="@mipmap/doctor" />
+
+    <TextView
+        android:id="@+id/mName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/my_details"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/text_size_default" />
+
+        </LinearLayout>
+
+</LinearLayout>

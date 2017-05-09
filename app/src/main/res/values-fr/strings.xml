@@ -1,0 +1,879 @@
+<resources>
+    <string name="app_name">SibSefid</string>
+    <string name="title_activity_login">se connecter</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBEkuB0buBxUidWfBx4wyVXojAvfvDVhm4 </string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe </string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Cette adresse e-mail est incorrecte</string>
+    <string name="error_invalid_password">Ce mot de passe est trop court</string>
+    <string name="error_invalid_password_please_old">Veuillez saisir l\'ancien mot de passe valide</string>
+    <string name="error_invalid_confirm_password">Ce mot de passe de confirmation est trop court</string>
+    <string name="error_invalid_both_pass">Ce mot de passe et mot de passe de confirmation doivent être identiques!</string>
+    <string name="error_invalid_both_pass_old">Cet ancien mot de passe est incorrect!</string>
+    <string name="error_invalid_first_name">Ce nom est invalide</string>
+    <string name="error_invalid_last_name">Ce nom est invalide</string>
+    <string name="error_invalid_country">Ce nom de pays est incorrect</string>
+    <string name="error_invalid_speciality">Ce nom de spécialité n\'est pas valide</string>
+    <string name="error_invalid_pracitice">Cette année de pratique est invalide</string>
+    <string name="error_invalid_phone_number">Ce numéro de téléphone est invalide</string>
+    <string name="error_invalid_npi_number">Ce NPI Number est invalide</string>
+    <string name="error_invalid_state_name">Ce nom d\'état n\'est pas valide</string>
+    <string name="error_invalid_licence_number">Ce numéro de licence est invalide</string>
+    <string name="error_invalid_spoken_language">Cette langue parlée n\'est pas valide</string>
+    <string name="error_invalid_city">Cette ville est invalide</string>
+    <string name="error_invalid_address">Cette adresse n\'est pas valide</string>
+    <string name="error_invalid_post_code">Ce code postal n\'est pas valide</string>
+    <string name="error_invalid_dob">Cette date de naissance est invalide</string>
+    <string name="error_invalid_zip">Ce numéro est invalide</string>
+    <string name="error_invalid_qualification">Le champ de qualification ne doit pas être vide</string>
+    <string name="error_invalid_fee">Ce montant n\'est pas valide</string>
+    <string name="error_invalid_message">Ce champ Message ne doit pas être vide</string>
+    <string name="error_invalid_date">Veuillez sélectionner une date valide!</string>
+    <string name="error_invalid_hours">Veuillez sélectionner des heures valides!</string>
+    <string name="error_invalid_minute">Veuillez sélectionner des minutes valides!</string>
+    <string name="error_invalid_time">Veuillez sélectionner une heure valide!</string>
+    <string name="error_invalid_chat_type">Veuillez sélectionner un type de clavardage valide!</string>
+    <string name="error_invalid_medicare_no">Numéro d\'assurance-maladie invalide</string>
+    <string name="error_invalid_first_name_not_text">Le nom doit avoir des alphabets seulement </string>
+
+    <string name="error_field_required">Ce champ est requis</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bonjour fragment vide</string>
+    <string name="login_as_patient">LOGIN COMME PATIENT</string>
+    <string name="login_as_provider">Connexion Fournisseur COMME</string>
+    <string name="click_here">Cliquez ici</string>
+    <string name="click_here_if_you">Si vous recevez SibSefid comme un avantage collectif.</string>
+    <string name="remember_me">Souviens-toi de moi</string>
+    <string name="forgot_pass">Mot de passe oublié?</string>
+    <string name="you_dont_have">Vous n\'avez pas de compte?</string>
+    <string name="signup">S\'inscrire</string>
+    <string name="forgot_pass_1">Mot de passe oublié</string>
+    <string name="forgot_pass_2">Veuillez fournir l\'adresse e-mail enregistrée afin que nous vous envoyions un courrier électronique qui vous permettra de réinitialiser votre mot de passe.</string>
+    <string name="reset_password">réinitialiser le mot de passe</string>
+    <string name="title_activity_sign_up">S\'inscrire</string>
+    <string name="first_name">Prénom</string>
+    <string name="file_name">Nom de fichier</string>
+    <string name="last_name">Nom de famille</string>
+    <string name="prompt_password_confirm">Confirmez le mot de passe</string>
+    <string name="address">Adresse</string>
+    <string name="address_1">Adresse 2</string>
+    <string name="city">Ville</string>
+    <string name="select_state">Sélectionnez l\'état</string>
+    <string name="post_code">Code postal</string>
+    <string name="dob">Date de naissance</string>
+    <string name="gender">Le genre</string>
+    <string name="register">REGISTRE</string>
+    <string name="title_activity_patient">PatientActivity</string>
+
+    <string name="action_settings">Paramètres</string>
+    <string name="action">Action</string>
+    <string name="dial_911">Cadran911</string>
+    <string name="for_medical_emerangcy">Pour l\'urgence médicale</string>
+    <string name="notification">Notification</string>
+
+    <string name="my_details">Mes Details</string>
+    <string name="my_helth_history">Mon histoire de la santé</string>
+    <string name="my_message">Mon message</string>
+
+    <string name="see_doctor">Voir le docteur</string>
+    <string name="my_appointment">Ma nomination</string>
+    <string name="my_medicine_remindert">Rappel de médecine</string>
+
+    <string name="my_reminder_set">Ensemble de rappel</string>
+    <string name="my_reminder_list">Liste des rappels</string>
+    <string name="medicine_name">NOM DU MEDICAMENT</string>
+
+
+    <string name="my_billing">Ma facturation</string>
+    <string name="my_result">Mon résultat</string>
+    <string name="trackers">Suiv.</string>
+    <string name="symptom_checker">Vérificateur de Symptom</string>
+
+    <string-array name="namearray">
+        <item>@string/my_details</item>
+        <item>@string/my_helth_history</item>
+        <item>@string/my_message</item>
+        <item>@string/see_doctor</item>
+        <item>@string/my_appointment</item>
+        <item>@string/my_billing</item>
+        <item>@string/my_result</item>
+        <item>@string/trackers</item>
+        <item>@string/symptom_checker</item>
+        <item>@string/my_medicine_remindert</item>
+    </string-array>
+
+    <string name="account_details">Compte \nDétails</string>
+    <string name="billing_information">Facturation \ninformation</string>
+    <string name="family_information">Famille \nInformation</string>
+    <string name="title_m">Titre:*</string>
+    <string name="select_language">CHOISIR LA LANGUE*</string>
+    <string name="lastname_m">Nom de famille:</string>
+    <string name="email_m">Email:*</string>
+    <string name="dob_m">Date de naissance:*</string>
+    <string name="medicare_number_m">Numéro d\'assurance-maladie:*</string>
+    <string name="gender_m">Le genre:*</string>
+    <string name="male">Mâle</string>
+    <string name="female">Femelle</string>
+    <string name="country_m">Pays:*</string>
+    <string name="state_m">Etat:*</string>
+    <string name="city_suburb_m">Ville/Suburb:*</string>
+    <string name="address_m">Adresse Line 1:*</string>
+    <string name="address_2_m">Adresse Line 2:*</string>
+    <string name="mobile_m">Mobile:*</string>
+    <string name="ememrgency_no_m">Numéro d\'urgence:</string>
+    <string name="update_profile">Mettre à jour le profil</string>
+
+    <string name="summery">Résumé</string>
+    <string name="blood_pressure">Tension artérielle</string>
+    <string name="blood_glucose">Glucose sanguin</string>
+    <string name="make_my_result">Faire tous mes résultats</string>
+    <string name="visible_or">Visible ou</string>
+    <string name="invisible_for_doctor_for">Invisible pour  </string>
+    <string name="my_next_appointment">Le médecin pour mon prochain rendez-vous</string>
+    <string name="if_you_issue">Si vous êtes en urgence, composez le 911 ou rendez-vous à la salle d\'urgence la plus proche. SibSefid n\'offre pas de service d\'urgence.</string>
+    <string name="about_me">À propos de moi</string>
+    <string name="qualication">Qualification</string>
+    <string name="licensed_state">État accrédité</string>
+    <string name="schedule">Programme</string>
+    <string name="choose_first_available">Choisir en premier lieu</string>
+    <string name="visit_now">Visiter maintenant</string>
+    <string name="book_an_appointment">Prenez rendez-vous</string>
+    <string name="book_an_appointment_request">Demande de rendez-vous</string>
+    <string name="patient">Patient: </string>
+    <string name="patient_capital">PATIENT: </string>
+    <string name="provider">Fournisseur: </string>
+    <string name="date">Date:* </string>
+    <string name="would_you_like_this_appointment_by_">Souhaitez-vous ce rendez-vous par vidéo ou par téléphone?</string>
+    <string name="please_enter_phone">Veuillez entrer le numéro de téléphone que nous devrions appeler:</string>
+    <string name="chat">Bavarder</string>
+    <string name="audio">l\'audio</string>
+    <string name="video">Vidéo</string>
+    <string name="cancel">Annuler</string>
+    <string name="book_appointment">Rendez-vous</string>
+
+    <string name="my_past_appointment">Mon rendez-vous passé</string>
+    <string name="my_future_appointment">Mon rendez-vous futur</string>
+
+    <string name="status">Statut: </string>
+    <string name="communication_not">Note de communication</string>
+    <string name="my_history">Mon histoire</string>
+    <string name="my_life_style">Mon style de vie</string>
+    <string name="my_family_history">Mon histoire familiale</string>
+    <string name="allergies">Allergies:</string>
+    <string name="do_you_have_allergies">Avez-vous des allergies?</string>
+    <string name="medication_history">Histoire des médicaments:</string>
+    <string name="enter_strength">Entrer la force</string>
+    <string name="does_how_many_time">Fait / (combien de fois par jour)</string>
+    <string name="past_medical_sergical_history"><![CDATA[Past Medical & Surgical History]]></string>
+    <string name="smoking">Fumeur: </string>
+    <string name="do_you_smoke">Est-ce que tu fumes?</string>
+    <string name="alcohol">De l\'alcool: </string>
+    <string name="do_you_take_alcohol">Prends-tu de l\'alcool?</string>
+    <string name="family_history">Histoire de famille:</string>
+    <string name="do_you_have_any_family_medical_history">Avez-vous des antécédents familiaux?</string>
+    <string name="waist_size">Tour de taille : (cm)</string>
+    <string name="height_size">Hauteur Taille: (cm)</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="do_you_get_atleast">Avez-vous au moins 7 heures de sommeil par jour?</string>
+    <string name="other_medical_history">Autres antécédents médicaux:</string>
+    <string name="do_you_other_medical">Avez-vous d\'autres antécédents médicaux?</string>
+
+
+    <string name="other">Autre</string>
+    <string name="add">Ajouter</string>
+
+    <string name="check_weight">VÉRIFIEZ LE POIDS</string>
+
+    <string name="check_blood_oxigen">VÉRIFIEZ L\'OXIGEN DU SANG</string>
+    <string name="check_tempture">VÉRIFIEZ LA TEMPÉRATURE</string>
+    <string name="watch_the_video">Regarder le \nvidéo</string>
+    <string name="add_result_manually">Ajouter un résultat \nManuellement</string>
+    <string name="see_previous_result">Voir Précédent \nRésultat</string>
+    <string name="enquire_about_the_weight_scale">Renseignez-vous sur l\'échelle de poids</string>
+    <string name="search">Chercher</string>
+    <string name="flip">Flip</string>
+    <string name="details">Détails</string>
+    <string name="appointment">Rendez-vous</string>
+    <string name="messages">Messages</string>
+    <string name="inbox">Boîte de réception</string>
+    <string name="sent">Envoyé</string>
+    <string name="compose_msg">Composer le message</string>
+    <string name="event_testing">Test d\'événement</string>
+    <string name="doctor">Docteur</string>
+    <string name="message">Message</string>
+    <string name="call">Appel</string>
+    <string name="to">À</string>
+    <string name="content">Contenu</string>
+    <string name="submit">Soumettre</string>
+
+    <string name="faq_1">Dapibus sed cum, aliquam cras egestas enim elit in mattis?</string>
+    <string name="faq_2">Papibus sed cum,aliquam craselit in mattis?</string>
+    <string name="faq_3">Sed cum,aliquam cras egestas enim elit in mattis?</string>
+    <string name="faq_4">Dapibus sed cum, aliquam cras egestas mattis?</string>
+    <string name="faq_5">Papibus sed cum,aliquam craselit in mattis?</string>
+    <string name="faq_6">Sed cum,aliquam cras egestas enim elit in mattis?</string>
+    <string name="faq_7">Dapibus sed cum, aliquam cras egestas mattis?</string>
+    <string name="name_m">prénom*</string>
+    <string name="subject">Assujettir</string>
+    <string name="subject_capital">ASSUJETTIR</string>
+    <string name="message_m">Message*</string>
+    <string name="send_message">Envoyer le message</string>
+    <string name="blog">Blog</string>
+    <string name="medical_device">Équipement médical</string>
+    <string name="faq">Faq</string>
+    <string name="contact_us">Contactez nous</string>
+    <string name="change_password">Changer le mot de passe</string>
+    <string name="logout">Connectez - Out</string>
+    <string name="from_date">Partir de la date: </string>
+    <string name="to_date">À ce jour: </string>
+    <string name="e911md_will_transfer">SibSefid transférera les frais dans le compte bancaire suivant</string>
+
+    <string-array name="faq_array">
+        <item>@string/faq_1</item>
+        <item>@string/faq_2</item>
+        <item>@string/faq_3</item>
+        <item>@string/faq_4</item>
+        <item>@string/faq_5</item>
+        <item>@string/faq_6</item>
+        <item>@string/faq_7</item>
+    </string-array>
+
+
+    <!-- Doctor Home Screen String Tag Related-->
+    <string name="home_name">Dr. Tonny Discosta</string>
+    <string name="home_notification">Notification</string>
+    <string name="home_Message">Message</string>
+
+    <!-- My Profile Screen Text-->
+
+    <string name="myprofile">Mon profil</string>
+    <string name="myprofile_title">Titre</string>
+    <string name="myprofile_firstname">Prénom</string>
+    <string name="myprofile_lastname">Nom de famille</string>
+
+    <string name="myprofile_email">Email</string>
+    <string name="myprofile_dob">Date de naissance</string>
+    <string name="myprofile_npinumber">NPI Number</string>
+
+    <string name="myprofile_gender">Le genre</string>
+    <string name="myprofile_country">Pays</string>
+    <string name="myprofile_city">Ville</string>
+    <string name="myprofile_state">Etat/Suburb</string>
+
+
+    <string name="myprofile_addressline1">Adresse Line1</string>
+    <string name="myprofile_addressline2">Adresse Line2</string>
+    <string name="myprofile_zipcode">Code postal</string>
+
+    <string name="myprofile_mobile">Mobile</string>
+    <string name="myprofile_notverified">Mobile no. Non vérifié</string>
+
+    <string name="myprofile_qualification">Qualification</string>
+    <string name="myprofile_language">La langue</string>
+
+
+    <string name="myprofile_sign">Signature</string>
+    <string name="myprofile_resume">CV</string>
+
+    <string name="myprofile_save">Vérifier</string>
+    <string name="myprofile_send_code">Envoyer le code</string>
+
+    <string name="myprofile_about_me">À propos de moi</string>
+    <string name="myprofile_button_save">sauvegarder</string>
+
+
+    <!--Account Detail Screen -->
+
+    <string name="AccountDetail_BankName">Nom de banque :</string>
+    <string name="AccountDetail_AccNamee">Nom du compte :</string>
+    <string name="AccountDetail_AccountNo">Numéro A / C :</string>
+
+    <string name="AccountDetail_BSB">BSB :</string>
+
+    <string name="AccountDetail_PaypalEmail">Identifiant de courriel Paypal :</string>
+    <string name="AccountDetail_papaltoget">Ou utiliser Paypal pour obtenir payé :</string>
+    <string name="full_body">Tout le corps</string>
+    <string name="head_of_brain">Tête de cerveau</string>
+    <string name="gentilas_or_urinary">Gentilas or Urinary</string>
+    <string name="abdomen">Abdomen</string>
+    <string name="leg">Leg</string>
+    <string name="arm">Arm</string>
+    <string name="neck_or_back">Neck or Back</string>
+    <string name="chest">Chest</string>
+    <string name="mouth_or_teeth">Mouth or Teeth</string>
+    <string name="neck">Neck</string>
+    <string name="nose">Nose</string>
+    <string name="ears">Ears</string>
+    <string name="skin">Skin</string>
+    <string name="eyes">Eyes</string>
+    <string name="other_symptoms">Autres symptômes</string>
+    <string name="patient_details">PatientDetails</string>
+    <string name="my_personal_note">Ma note personnelle</string>
+    <string name="docotor_avaiability">Disponibilité du médecin</string>
+    <string name="my_patient_list">Ma liste de patients</string>
+    <string name="my_trasation">Ma transaction</string>
+    <string name="report_a_problem">Signaler un problème</string>
+    <string name="doctor_profile">Profil du médecin</string>
+    <string name="select_country">Sélectionner le pays</string>
+    <string name="select_speciality">Sélectionnez Spécialité</string>
+    <string name="enter_pratice_year">Entrer l\'année de pratique</string>
+    <string name="phone">Téléphone</string>
+    <string name="npi_number">Numéro NPI</string>
+    <string name="license_number">Numéro de licence</string>
+    <string name="spoken_english">Langue parléee</string>
+    <string name="attech_file">Pièce jointe</string>
+    <string name="consult_fee">Consulter les frais</string>
+    <string name="please_check_your_internet_connection_error">Please check your internet connection error!</string>
+    <string name="select_city">Ville</string>
+    <string name="failed_registration">Failed Registration!</string>
+    <string name="failed_login">Login Failed!</string>
+    <string name="minutes_10"> for 10 minutes</string>
+    <string name="digits">0123456789</string>
+    <string name="at">at</string>
+    <string name="on">on</string>
+    <string name="all">All</string>
+    <string name="defaults">Default</string>
+    <string name="date_dailog_title">DatePicker Title</string>
+    <string name="hours">Hours</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="minutes">Minutes</string>
+    <string name="select_a_time_zone">Sélectionnez un fuseau horaire</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="name_of_card">Nom sur carte* :</string>
+    <string name="card_number">Numéro de carte* :</string>
+    <string name="cvv">CVV * :</string>
+    <string name="expiration_month">mois d\'expiration* :</string>
+    <string name="expiration_year">Année d\'expiration* :</string>
+    <string name="is_your_billing">Votre adresse de facturation est identique à votre adresse actuelle?</string>
+    <string name="billing_address">Adresse de facturation* :</string>
+    <string name="billing_address_2">Adresse de facturation ( Line 2 ) :</string>
+    <string name="select_country_m">Sélectionner le pays* :</string>
+    <string name="select_state_m">Sélectionnez l\'état* :</string>
+    <string name="city_m">Ville* :</string>
+    <string name="zip">Zip :</string>
+    <string name="do_you_have_insurance">Avez-vous une assurance :</string>
+    <string name="insurance_name">Nom de la compagnie d\'assurance :</string>
+    <string name="save_details">Save DetailsEnregistrer les détails</string>
+    <string name="insurance_number">Numéro d\'assurance :</string>
+    <string name="first_name_m">Prénom* :</string>
+    <string name="billing_address_line_1">Adresse Line 1 :</string>
+    <string name="country">Pays : </string>
+    <string name="state">Etat : </string>
+    <string name="relationship">Relation* :</string>
+    <string name="my_profile">Mon profil</string>
+    <string name="my_account">Mon compte</string>
+    <string name="my_availability">Ma disponibilité</string>
+    <string name="my_patient">Mon patient</string>
+    <string name="check_my_room">Vérifier ma chambre</string>
+    <string name="my_profile_would_apear">Mon profil apparaîtrait aux patients</string>
+
+    <string-array name="hoursarray">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+
+
+    <string-array name="minutes_array">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+
+
+    </string-array>
+
+    <string name="jan">Jan</string>
+    <string name="feb">Feb</string>
+    <string name="mar">Mar</string>
+    <string name="apr">Apr</string>
+    <string name="may">May </string>
+    <string name="jun">Jun</string>
+    <string name="jly">Jul</string>
+    <string name="aug">Aug</string>
+    <string name="sep">Sep</string>
+    <string name="oct">Oct</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Dec</string>
+
+    <string-array name="months">
+        <item>@string/jan</item>
+        <item>@string/feb</item>
+        <item>@string/mar</item>
+        <item>@string/apr</item>
+        <item>@string/may</item>
+        <item>@string/jun</item>
+        <item>@string/jly</item>
+        <item>@string/aug</item>
+        <item>@string/sep</item>
+        <item>@string/oct</item>
+        <item>@string/nov</item>
+        <item>@string/dec</item>
+
+    </string-array>
+
+    <string-array name="languages">
+        <item>@string/english</item>
+      <!--  <item>@string/french</item>-->
+        <item>@string/persian</item>
+
+    </string-array>
+
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="persian">Persian</string>
+
+    <string name="firstname_m">Prénom:*</string>
+    <string name="name">prénom</string>
+    <string name="what_happen">Entrez ce qui s\'est passé</string>
+    <string name="enter_year_started">Entrer l\'année</string>
+    <string name="do_you_have_medical_history">Avez-vous des antécédents médicaux?</string>
+    <string name="enter_how_many">Entrez combien</string>
+    <string name="enter_how_many_drinking_day">Entrez le nombre de jours de consommation</string>
+    <string name="enter_waist">Entrez dans la taille</string>
+    <string name="enter_height">Entrez la hauteur</string>
+    <string name="enter_how_name_of_condition">Entrez le nom de la condition</string>
+    <string name="enter_who_in_family">Entrez qui dans la famille</string>
+    <string name="dont_known">Ne sais pas</string>
+    <string name="refill">Recharge</string>
+
+    <string name="failed_updation">Mauvaise mise à jour!</string>
+    <string name="added_member_detail">Membres de la famille ajoutés</string>
+    <string name="member_name">prénom</string>
+    <string name="member_email">Email</string>
+    <string name="member_relation">Relation</string>
+    <string name="member_relation_new">Relation</string>
+    <string name="member_genderl">Le genre</string>
+
+    <string-array name="gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+
+    </string-array>
+
+
+    <string name="systolic_mmHg">Systolique, mmHg</string>
+    <string name="diastolic_mmHg">Diastolique, mmHg</string>
+    <string name="pulse_bpm">Impulsion,bpm</string>
+
+
+    <string name="temperature_value">Température, °C</string>
+    <string name="waist">Taille</string>
+
+    <string name="s_no">No.</string>
+
+    <string name="blood_oxygen">Oxygène sanguin</string>
+    <string name="bmi">BMI</string>
+    <string name="ecg">ECG</string>
+    <string name="ent">ENT</string>
+    <string name="report_skin">Peau</string>
+    <string name="heart_rate">Rythme cardiaque</string>
+    <string name="height">la taille</string>
+    <string name="temperature">Température</string>
+    <string name="waist_circumference">Tour de taille</string>
+    <string name="weight">Poids</string>
+    <string name="error_str_subject">Veuillez fournir le sujet</string>
+    <string name="error_str_content">Veuillez fournir le contenu</string>
+    <string name="my_location">Ma position: </string>
+    <string name="appointment_date">Date de rendez-vous:</string>
+    <string name="appointment_time">Heure de rendez-vous</string>
+    <string name="appointment_mode">Mode</string>
+    <string name="search_by_date">Recherche par date</string>
+    <string name="preferred_time">Prefferred Time :</string>
+    <string name="all_time">Tout le temps</string>
+    <string name="speciality">Spécialité : </string>
+    <string name="all_speciality">Tous Spécialités</string>
+    <string name="language">La langue : </string>
+    <string name="provider_name">Nom du fournisseur :</string>
+    <string name="search_by_name">Recherche par nom</string>
+    <string name="reson_for_visit">Raison de visite</string>
+    <string name="choose_pharmcy">Choisir une pharmacie</string>
+    <string name="payment">Paiement</string>
+    <string name="what_is_reason_of_appointment">Quelle est la raison de votre rendez-vous?(ex: Sore Throat)</string>
+    <string name="additional_comments_or_concerns">Autres commentaires ou préoccupations</string>
+    <string name="add_a_photo">Ajouter une photo (utile pour les éruptions cutanées, les coupures, etc.)</string>
+    <string name="browse">Feuilleter</string>
+    <string name="back">Arrière</string>
+    <string name="continue_s">Continuer</string>
+    <string name="check_out_with_paypal">Payer avec PayPal ou carte</string>
+    <string name="voucher">Bon</string>
+    <string name="card">Carte</string>
+    <string name="time">Temps:* </string>
+    <string name="type">Type:* </string>
+    <string name="change_pharmacy">Changer de pharmacie</string>
+    <string name="address_m_1">Adresse*</string>
+    <string name="phone_m">Téléphone*</string>
+    <string name="save">sauvegarder</string>
+    <string name="send_pharmacy">Envoyer à la pharmacie</string>
+    <string name="change_pharmacy_success">Pharmacie enregistrée avec succès</string>
+    <string name="zip_m">Zip code*</string>
+    <string name="voucher_code">Code promo</string>
+    <string name="enter_your_voucher_code">Entrez votre code promo</string>
+    <string name="card_number_1">Numéro de carte</string>
+    <string name="expiration">Expiration</string>
+    <string name="month">Mois</string>
+    <string name="year">An</string>
+    <string name="name_of_card_1">Nom sur carte</string>
+    <string name="pay_with_credit_card">Payer avec carte de crédit</string>
+    <string name="pay_with_paypal">Payer avec PayPal</string>
+    <string name="pay_with_voucher">Payer avec le bon</string>
+    <string name="title">S\'il vous plaît, attendez...</string>
+    <string name="paypal">Paypal</string>
+    <string name="please_enter_your_code">Veuillez saisir votre code promo</string>
+    <string name="appointment_success">Rendez-vous réservé et paiement effectués avec succès.</string>
+    <string name="for_10minutes">pendant 10 minutes</string>
+    <string name="fee">Frais : </string>
+    <string name="reject">Rejeter</string>
+    <string name="your_request_successfully_saved">Votre demande a bien été enregistrée</string>
+    <string name="communication_note">Note de communication</string>
+    <string name="physicion_order">Ordre des médecins</string>
+    <string name="patient_name">Nom du patient:</string>
+    <string name="physician">Médecin : </string>
+    <string name="signature">SIGNATURE</string>
+    <string name="please_choose_atleast_one_availability">Veuillez choisir au moins une disponibilité</string>
+    <string name="user_select_one_item_at_a_time">L\'utilisateur choisit un élément à la fois!</string>
+
+
+    <string-array name="prefferred_time">
+        <item>8 am</item>
+        <item>9 am</item>
+        <item>10 am</item>
+        <item>11 am</item>
+        <item>12 pm</item>
+        <item>1 pm</item>
+        <item>2 pm</item>
+        <item>3 pm</item>
+        <item>4 pm</item>
+        <item>5 pm</item>
+        <item>6 pm</item>
+        <item>7 pm</item>
+        <item>8 pm</item>
+        <item>9 pm</item>
+        <item>10 pm</item>
+        <item>11 pm</item>
+        <item>12 am</item>
+        <item>1 am</item>
+        <item>2 am</item>
+        <item>3 am</item>
+        <item>4 am</item>
+        <item>5 am</item>
+        <item>6 am</item>
+        <item>7 am</item>
+
+    </string-array>
+
+    <string-array name="language_array">
+        <item>Arabic</item>
+        <item>Chinese</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Greek</item>
+        <item>Gujarati</item>
+        <item>Haitian Creole</item>
+        <item>Hebrew</item>
+        <item>Hindi</item>
+        <item>Igbo</item>
+        <item>Italian</item>
+        <item>Korean</item>
+        <item>Lithuanian</item>
+        <item>Malayalam</item>
+        <item>Panjabi</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Pushto</item>
+        <item>Romanian</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+        <item>Telugu</item>
+        <item>Ukrainian</item>
+
+    </string-array>
+
+
+    <!--QB string-->
+    <string name="pref_resolution_key">resolution_preference</string>
+
+    <string name="pref_startbitrate_key">startbitrate_preference</string>
+    <string name="pref_startbitrate_default">Default</string>
+
+    <string name="pref_startbitratevalue_key">startbitratevalue_preference</string>
+    <string name="pref_startbitratevalue_default">1000</string>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_default">true</string>
+
+    <string name="pref_audiocodec_key">pref_audio_codec</string>
+    <string name="pref_audiocodec_def">ISAC</string>
+    <string name="accepted">Accepté</string>
+
+
+    <string name="rejected">Rejeté</string>
+    <string name="noAnswer">Pas de réponse</string>
+    <string name="hungUp">Pendu</string>
+    <string name="closed">Fermé</string>
+    <string name="time_out">Temps libre</string>
+    <string name="failed">Échoué</string>
+    <string name="checking">Vérification...</string>
+    <string name="connected">Connecté</string>
+    <string name="disconnected">Débranché</string>
+
+
+    <!--Fragment Video Chat-->
+    <string name="text_mute">Muet</string>
+    <string name="text_Video">Vidéo</string>
+    <string name="text_Speaker">Orateur</string>
+    <string name="text_Button_End">Fin</string>
+    <string name="text_Button_Accept">Acceptez</string>
+    <string name="wait">attendez...</string>
+
+    <string name="please_choose_from_date">Veuillez sélectionner une date</string>
+    <string name="please__choose_from_hours">Veuillez choisir parmi les heures</string>
+
+    <string name="please__choose_from_time">Veuillez choisir à partir du moment!</string>
+    <string name="please__choose_timezone">Veuillez sélectionner le fuseau horaire!</string>
+    <string name="please__choose_to_date">Veuillez choisir à ce jour!</string>
+    <string name="please_choose_to_time">Veuillez sélectionner l\'heure!</string>
+    <string name="please_choose_to_hours">Veuillez sélectionner heures!</string>
+    <string name="please_choose_from_minutes">Veuillez choisir parmi les minutes!</string>
+    <string name="please_choose_to_minutes">Veuillez sélectionner les minutes!</string>
+
+    <string name="please_choose_weed">Veuillez sélectionner les jours de la semaine!</string>
+
+    <string name="sun">Sun</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thus">Thus </string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tueday">Tuesday</string>
+    <string name="wedday">Wednesday</string>
+    <string name="thusday">Thusday </string>
+    <string name="friday">Friday</string>
+    <string name="satday">Saturday</string>
+
+    <string-array name="week">
+        <item>@string/sun</item>
+        <item>@string/mon</item>
+        <item>@string/tue</item>
+        <item>@string/wed</item>
+        <item>@string/thus</item>
+        <item>@string/fri</item>
+        <item>@string/sat</item>
+
+    </string-array>
+
+    <string-array name="week_full">
+        <item>@string/sunday</item>
+        <item>@string/monday</item>
+        <item>@string/tueday</item>
+        <item>@string/wedday</item>
+        <item>@string/thusday</item>
+        <item>@string/friday</item>
+        <item>@string/satday</item>
+
+    </string-array>
+
+    <string name="select_week_days">Sélectionnez jours de la semaine</string>
+    <string name="order_date">Date de commande:</string>
+    <string name="episode_date">Episode Associé:</string>
+    <string name="physicial_sign">Signature du médecin:</string>
+    <string name="date_">Date:</string>
+    <string name="status_">Statut</string>
+    <string name="filter">Filtre</string>
+    <string name="filter_capital">FILTRE</string>
+    <string name="please_fill_all_fields">Veuillez remplir tous les champs de saisie!!</string>
+    <string name="please_fill_communication_fields">Veuillez remplir le champ de communication!</string>
+    <string name="please_fill_signature_date">Veuillez remplir la date de signature!</string>
+    <string name="singnature">Singnature</string>
+    <string name="check_blood_pressure">Vérifiez la pression artérielle</string>
+    <string name="check_ecg">Vérifier Ecg</string>
+    <string name="check_ent">Voir Ent</string>
+    <string name="check_skin">Vérifier la peau</string>
+    <string name="no_sd_card">Pas de carte SD</string>
+    <string name="choose_exsting">Choisir existante</string>
+    <string name="user_camera">Utiliser la caméra</string>
+    <string name="choose_option">Choisissez une option :</string>
+    <string name="print_receipt">Imprimer le reçu :</string>
+    <string name="allow_my_treating">Permettez à mes médecins traitants de voir mon résumé de santé</string>
+    <string name="old_password">ancien mot de passe</string>
+    <string name="new_password">nouveau mot de passe</string>
+    <string name="confirm_password">Confirmez le mot de passe</string>
+    <string name="appointment_on">Rendez-vous sur</string>
+    <string name="when">Quand</string>
+    <string name="billing_address_new">200 Braker Ave, Lowell MA 01850 \nUnited States \nPhone: 774-420-1234 \nSibSefid@gmail.com</string>
+    <string name="appointment_status">Statut de rendez-vous:</string>
+    <string name="time_">Temps:</string>
+    <string name="doctor_name">Nom du médecin:</string>
+    <string name="payment_by">Paiement par:</string>
+    <string name="contact_us_address">240 Barker Ave, Lowell MA 01850 \nUnited States</string>
+    <string name="pharmacy">Pharmacie</string>
+    <string name="ThereIsNoMessages">Il n\'y a pas de messages</string>
+    <string name="NoAppointmentAvailable">Aucune rendez-vous disponible</string>
+    <string name="ViewMore">Afficher plus</string>
+    <string name="select_designation">Sélectionner</string>
+    <string name="error_attachment">Veuillez joindre un curriculum vitae</string>
+    <string name="enquire_about_the_blood_oxygen">Renseignez-vous sur Oxygène sanguin</string>
+    <string name="enquire_about_the_temp">Renseignez-vous sur l\'échelle de température</string>
+    <string name="enquire_about_the_blood_pressure">Renseignez-vous sur la pression artérielle</string>
+    <string name="enquire_about_the_ecg">Renseignez-vous sur l\'ECG</string>
+    <string name="enquire_about_the_ent">Renseignez-vous sur ENT</string>
+    <string name="enquire_about_the_skin">Renseignez-vous sur la peau</string>
+
+    <string name="weightPound">Poids (livres)</string>
+    <string name="MeasureDate">Mesure Date</string>
+    <string name="oxygenvalue">Valeur d\'oxygène (%)</string>
+    <string name="AddWeightResultManualy">Ajouter le résultat du poids manuellement</string>
+    <string name="AddBloodOxygenResultManualy">Ajouter le résultat de l\'oxygène du sang manuellement</string>
+    <string name="add_temperature_result_manualy">Ajouter le résultat de température manuellement</string>
+    <string name="add_blood_pressure_result_manualy">Ajouter le résultat de la pression artérielle manuellement</string>
+    <string name="add_ecg_result_manually">Ajouter le résultat de l\'ECG manuellement</string>
+    <string name="add_ent_result_manually">Ajouter ENT un résultat manuellement</string>
+    <string name="temperature_c">Température (° C)</string>
+    <string name="time_c">Heure (HH: MM)</string>
+    <string name="pulse_value">Valeur d\'impulsion (bpm)</string>
+    <string name="diastolic_value">Diastolic Value (mmHg)</string>
+    <string name="systolic_value">Valeur systolique (mmHg)</string>
+    <string name="upload_file">Téléverser un fichier</string>
+    <string name="uploaded_date">Date de téléchargement</string>
+    <string name="upload">Télécharger</string>
+    <string name="upload_photo">Envoyer la photo</string>
+    <string name="cooming_soon">Arrive bientôt</string>
+    <string name="clinical_dashboard">Tableau de bord clinique</string>
+    <string name="fragment_main_btn_chat">Démarrer la discussion</string>
+    <string name="not_editable">Ce dossier a une nomination en attente ou approuvée ne peut donc pas être modifié</string>
+
+    <string name="start_date">DATE DE DÉBUT</string>
+    <string name="end_date">DATE DE FIN</string>
+    <string name="drug_dose">DOSES DE MÉDICAMENT</string>
+    <string name="time_taken">TEMPS PRIS</string>
+    <string name="select_week">JOURS DE LA SEMAINE </string>
+    <string name="use_of_note">NOTES D\'UTILISATION</string>
+    <string name="select_medicine">Sélectionnez Médecine</string>
+    <string name="refill_medicine">Remplir la médecine</string>
+    <string name="rmedicine">Médicament</string>
+    <string name="qty">Quantité*</string>
+    <string name="comment">Commentaire*</string>
+    <string name="request_appointment">Demande de rendez-vous</string>
+    <string name="availability_note">N\'a pas de rendez-vous ouverts. Si vous souhaitez visiter ce fournisseur, choisissez Demande de rendez-vous ci-dessous et nous essaierons d\'organiser un rendez-vous pour vous.</string>
+
+    <string name="appointment_request">Demande de rendez-vous</string>
+    <string name="app_desire_date">Date de rendez-vous*</string>
+    <string name="ideal_time_visit">Temps idéal pour votre visite*</string>
+    <string name="best_no_contact">Meilleur numéro pour le contact*</string>
+    <string name="whats_the_reason">Quelle est la raison de votre rendez-vous?*</string>
+    <string name="adding_comment">Autres commentaires ou préoccupations*</string>
+    <string name="i_agree_to"> Je suis d\'accord pour</string>
+    <string name="terms_counditions"> Termes et conditions</string>
+    <string name="submit_request"> Envoyer la demande</string>
+    <string name="no_record_found">Aucun Enregistrement Trouvé</string>
+    <string name="phone_consultation">Consultation téléphonique</string>
+    <string name="fill_this_form">Pour demander un médecin pour sa disponibilité, vous êtes tenu de remplir ce et nous vous reviendrons bientôt</string>
+    <string name="doctor_is_on_24hrs">Médecin sur appel est un service de 24 heures
+Où vous pouvez obtenir une consultation instantanée
+Avec le prochain fournisseur disponible. </string>
+    <string name="no_availability">Pas de disponibilité !</string>
+    <string name="no_ticket_found">Aucun billet trouvé !!</string>
+    <string name="no_personal_note_found">Aucune note personnelle trouvée !!</string>
+    <string name="my_previous_ticket">Mon précédent billet</string>
+    <string name="appointment_over">APPOINTMENT OVER</string>
+    <string name="your_time_is_up_for_appointment">Je vous remercie !! \n Votre temps est écoulé pour cette nomination.. !!</string>
+    <string name="ok">OK</string>
+    <string name="electrocarding">Electrocarding(ECG)</string>
+    <string name="my_time">My Time</string>
+    <string name="not_responed_by_doctor">Pas répondu par le docteur</string>
+    <string name="note_on">Note sur:</string>
+    <string name="note">Note:</string>
+    <string name="about">Sur</string>
+    <string name="add_a_new_problem">Ajouter un nouveau problème</string>
+    <string name="previous_ticket">Billet précédent</string>
+    <string name="problem_summary">Résumé du problème</string>
+    <string name="contact_us_at">contact@sibsefid.com</string>
+    <string name="from">From :</string>
+    <string name="message_capital">MESSAGE:</string>
+    <string name="account_detail">details du compte</string>
+    <string name="patients">Les patients:</string>
+
+</resources>

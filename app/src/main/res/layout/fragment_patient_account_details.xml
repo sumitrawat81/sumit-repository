@@ -1,0 +1,508 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".fragemnts.patient.PAccountDetails">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/details_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mUpdateBtn"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/registre_input_field_2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    app:ms_arrowColor="@color/text_color_black"
+                    app:ms_baseColor="@android:integer/config_shortAnimTime"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_highlightColor="@integer/color_code"
+                    app:ms_hint="@string/title_m"
+                    app:ms_hintColor="@color/gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/firstname_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+
+            <EditText
+                android:id="@+id/mFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/mLastName"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="Sumit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/lastname_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mLastName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/mEmail"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="Rawat"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/email_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/medicare_no"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/dob_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/registre_input_field_2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spiner_Day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:text="9"
+                        android:textSize="@dimen/text_size_default"
+                        app:ms_arrowColor="@color/text_color_black"
+                        app:ms_baseColor="@android:integer/config_shortAnimTime"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_highlightColor="@integer/color_code"
+                        app:ms_hintColor="@color/gray" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp_2"
+                    android:layout_marginEnd="@dimen/dp_2"
+                    android:layout_weight="1"
+                    android:background="@drawable/registre_input_field_2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spiner_Month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="2dp"
+                        android:gravity="center_vertical"
+                        android:text="june"
+                        android:textSize="@dimen/text_size_default"
+                        app:ms_arrowColor="@color/text_color_black"
+                        app:ms_baseColor="@android:integer/config_shortAnimTime"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_highlightColor="@integer/color_code"
+                        app:ms_hintColor="@color/gray" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/registre_input_field_2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spiner_Year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:text="1989"
+                        android:textSize="@dimen/text_size_default"
+                        app:ms_arrowColor="@color/text_color_black"
+                        app:ms_baseColor="@android:integer/config_shortAnimTime"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_highlightColor="@integer/color_code"
+                        app:ms_hintColor="@color/gray" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/medicare_number_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/medicare_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/mSelectCity"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/gender_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <RadioGroup
+                android:id="@+id/mRadioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton
+                    android:id="@+id/mRadioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_default" />
+
+                <RadioButton
+                    android:id="@+id/mRadioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_default" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/country_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/registre_input_field_2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_Country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:gravity="center_vertical"
+                    app:ms_arrowColor="@color/text_color_black"
+                    app:ms_baseColor="@android:integer/config_shortAnimTime"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_highlightColor="@integer/color_code"
+                    app:ms_hintColor="@color/gray" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/state_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/registre_input_field_2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spinner_State"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+
+                    android:text="jaipur"
+                    app:ms_arrowColor="@color/text_color_black"
+                    app:ms_baseColor="@android:integer/config_shortAnimTime"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_highlightColor="@integer/color_code"
+                    app:ms_hintColor="@color/gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/city_suburb_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mSelectCity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/mAddress_1"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="jaipur"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/address_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mAddress_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/mAddress_2"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="India"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/address_2_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mAddress_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:nextFocusDown="@+id/mPhoneNumber"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="Jk kjaaaaa  "
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <LinearLayout style="@style/MyProfile_linear">
+
+                <TextView
+                    style="@style/MyProfile_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/myprofile_mobile" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_field_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/registre_input_field_2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <fr.ganfra.materialspinner.MaterialSpinner
+                        android:id="@+id/spinner_MobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:gravity="center_vertical"
+                        app:ms_arrowColor="@color/text_color_black"
+                        app:ms_baseColor="@android:integer/config_shortAnimTime"
+                        app:ms_enableErrorLabel="false"
+                        app:ms_enableFloatingLabel="false"
+                        app:ms_highlightColor="@integer/color_code"
+                        app:ms_hintColor="@color/gray" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/mobile_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mPhoneNumber"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/input_field_height"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:nextFocusDown="@+id/mEmergencyPhoneNumber"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="78676776767"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/ememrgency_no_m"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_default" />
+
+            <EditText
+                android:id="@+id/mEmergencyPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/registre_input_field_2"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:nextFocusDown="@+id/mFirstName"
+                android:padding="@dimen/dp_10"
+                android:singleLine="true"
+                android:text="78676776767"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_default" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/mUpdateBtn"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="@string/update_profile"
+        android:textColor="@color/white_color"
+        android:textStyle="bold" />
+
+</RelativeLayout>

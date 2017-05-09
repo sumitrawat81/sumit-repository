@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/mProductImage"
+            android:layout_width="@dimen/product_device_size"
+            android:layout_height="@dimen/product_device_size"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:src="@mipmap/profile_img_infonew"
+            app:siBorderColor="@color/colorPrimary"
+            app:siBorderWidth="1dp"
+            app:siRadius="6dp"
+            app:siSquare="true" />
+
+        <TextView
+            android:id="@+id/mProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/mProductImage"
+            android:text="@string/electrocarding"
+            android:textColor="@color/colorPrimary"
+
+            android:textSize="@dimen/text_size_m"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mProductDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/mProductName"
+            android:layout_toEndOf="@+id/mProductImage"
+            android:text=""
+            android:textSize="@dimen/text_size_default"
+
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="#888"
+        android:visibility="visible"
+
+        ></View>
+
+</LinearLayout>

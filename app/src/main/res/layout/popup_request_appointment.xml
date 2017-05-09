@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_10">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popup_border_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/dp_10"
+                    android:paddingEnd="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="#F3F3F3"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/request_appointment"
+                            android:textColor="@color/profile_button"
+                            android:textSize="@dimen/sp_18" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/notification"
+                            android:visibility="gone"
+                            />
+
+                        <TextView
+                            android:id="@+id/mMedicineName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/fill_this_form"
+                            android:textSize="@dimen/text_size_default" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_desire_date"
+                            android:textSize="@dimen/text_size_default" />
+
+
+                        <TextView
+                            android:id="@+id/mDFromDateSelector"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginEnd="@dimen/dp_10"
+
+                            android:background="@drawable/editext_round_border_bg1"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textColor="@color/text_color_black" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ideal_time_visit"
+                            android:textSize="@dimen/text_size_default" />
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_45"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/registre_input_field"
+                            android:gravity="right|center_vertical"
+
+                            android:orientation="horizontal">
+
+
+                            <fr.ganfra.materialspinner.MaterialSpinner
+                                android:id="@+id/mscheduleTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/registre_input_field"
+                                android:gravity="center_vertical|right"
+                                app:ms_arrowColor="@color/text_color_black"
+                                app:ms_baseColor="@android:integer/config_shortAnimTime"
+                                app:ms_enableErrorLabel="false"
+                                app:ms_enableFloatingLabel="false"
+                                app:ms_highlightColor="@integer/color_code"
+                                app:ms_hintColor="@color/gray"
+                                app:ms_thickness="12sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/best_no_contact"
+                            android:textSize="@dimen/text_size_default" />
+
+                        <EditText
+                            android:id="@+id/mContactNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@drawable/editext_round_border_bg1"
+                            android:gravity="top"
+                            android:hint=""
+                            android:inputType="number"
+                            android:padding="@dimen/dp_10"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_default" />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/what_is_reason_of_appointment"
+                            android:textSize="@dimen/text_size_default" />
+
+                        <EditText
+                            android:id="@+id/mreasonForAppointment"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@drawable/editext_round_border_bg1"
+                            android:singleLine="true"
+                            android:hint=""
+                            android:padding="@dimen/dp_10"
+                            android:textSize="@dimen/text_size_default" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/additional_comments_or_concerns"
+                            android:textSize="@dimen/text_size_default" />
+
+                        <EditText
+                            android:id="@+id/mAdditionalComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_marginEnd="@dimen/dp_10"
+
+                            android:background="@drawable/editext_round_border_bg1"
+                            android:hint=""
+                            android:padding="@dimen/dp_10"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_size_default" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_4"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/mIAgreeChck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/i_agree_to"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_size_default"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/mtermsCoundition"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:paddingStart="@dimen/dp_4"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/terms_counditions"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/text_size_default"
+
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:weightSum="3">
+
+
+                        <RadioButton
+                            android:id="@+id/mChatCheckBox"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_45"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_red_audio"
+                            android:button="@null"
+                            android:drawableStart="@mipmap/chat"
+                            android:drawablePadding="@dimen/dp_2"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/chat"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/sp_10" />
+
+                        <RadioButton
+                            android:id="@+id/mAudioCheckBox"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_45"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_red_audio"
+                            android:button="@null"
+                            android:drawableStart="@mipmap/audio"
+                            android:drawablePadding="@dimen/dp_2"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/audio"
+                            android:textColor="@color/text_color_black"
+
+                            android:textSize="@dimen/sp_10" />
+
+                        <RadioButton
+
+                            android:id="@+id/mVideoCheckBox"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_45"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_red_audio"
+                            android:button="@null"
+                            android:drawableStart="@mipmap/video"
+                            android:drawablePadding="@dimen/dp_2"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dp_10"
+                            android:text="@string/video"
+                            android:textColor="@color/text_color_black"
+                            android:textSize="@dimen/sp_10" />
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/mSaveBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_marginStart="@dimen/dp_40"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:background="@color/profile_button"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingEnd="@dimen/dp_10"
+                        android:text="@string/send_pharmacy"
+                        android:textColor="@color/white_color" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pop_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+
+            android:visibility="gone" />
+
+        <ImageView
+
+            android:id="@+id/imageView_close"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="top|end"
+            android:clickable="true"
+            android:src="@mipmap/cross" />
+    </FrameLayout>
+
+</LinearLayout>

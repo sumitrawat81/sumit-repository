@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_theme"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <TextView
+            android:id="@+id/mMeasuredDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="12-04-2016"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/mSystolicValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_1"
+            android:layout_weight="2"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/systolic_mmHg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/mDiastolicValue"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_1"
+            android:layout_weight="2"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/diastolic_mmHg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/mPulse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_1"
+            android:layout_weight="2"
+            android:background="@color/white_color"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/pulse_bpm"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp_10" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_theme"></View>
+</LinearLayout>

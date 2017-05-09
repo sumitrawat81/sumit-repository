@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_white"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.sibsefid.fragemnts.patient.PFAQFragment">
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <!--<android.support.v7.widget.RecyclerView
+
+
+        android:name="com.e911md.fragemnts.patient.PFAQFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.e911md.fragemnts.patient.PFAQFragment"
+        tools:listitem="@layout/row_pmedical_devices" />-->
+
+    <ExpandableListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/gray"
+        android:divider="@color/gray"
+        android:dividerHeight="@dimen/dp_2"
+        android:groupIndicator="@null"></ExpandableListView>
+
+</RelativeLayout>

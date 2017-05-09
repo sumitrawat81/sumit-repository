@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentOpponents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryDark"
+    android:keepScreenOn="true">
+
+    <FrameLayout
+        android:id="@+id/localView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <ViewStub
+            android:id="@+id/localViewStub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/local_videoview" />
+
+        <ToggleButton
+            android:id="@+id/switchCameraToggle"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/call_icon"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/cameraOff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/localClinicalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+
+        android:padding="@dimen/dp_5">
+
+
+        <TextView
+
+            android:id="@+id/showClinicalDashboard"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_bgg"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="@string/clinical_dashboard"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid_opponents"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/localClinicalView"
+
+        android:layout_marginBottom="@dimen/dp_2"
+        android:horizontalSpacing="2dp"
+        android:numColumns="1"
+        android:verticalSpacing="2dp" />
+
+
+    <include
+        android:id="@+id/element_set_video_buttons"
+        layout="@layout/element_fragment_video_call"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/incUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="User Name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        />
+
+</RelativeLayout>
